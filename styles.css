@@ -16,13 +16,13 @@ body {background-color: gold;
     
     .nav-link {font-size: x-large;
     padding-right: 60px;
-    color: rgb(5, 144, 5);;
+    color: rgb(5, 144, 5);
     text-decoration: none;}
     
     
     
     .form {padding-top: 20%;
-    padding-bottom: 13%;
+    padding-bottom: 20%;
     padding-left: 29%;
     padding-right: 29%;
     text-align: center;
@@ -34,58 +34,59 @@ body {background-color: gold;
     grid-template-columns: 180px auto;
     }
     
-    #img {width: 55px;
-    padding-left: 30px;
+    #img {width: 40px;
+    padding-left: 100px;
     padding-right: 25px;
-    padding-top: 20px;
+    padding-top: 80px;
     }
     
-    #text h2 {margin-top: 3%;
-    margin-bottom: 0%;
+    #text h2 {margin-top: 80px;
+    margin-bottom: 0px;
     font-size: 20px;
     }
     
-    #text p {padding-top: 0%;
-    margin-top: 1%;}
+    #text p {padding-top: 0px;
+    margin-top: 1px;
+    font-size: 18px;}
     
     
     
     #how_we_teach {padding-top: 150px;
+    padding-bottom: 150px;
     padding-left: 25%;}
     
     
     
     .flex-container {
-    padding-top: 150px;
+    padding-top: 150px;padding-bottom: 150px;
     display: flex;
     flex-wrap: nowrap;
     background-color: gold;
-    padding-bottom: 150px;
     }
     
-    .flex-container h2, 
-    .flex-container p  {padding-left: 10%;
-    padding-right: 10%;}
-    
     .flex-container p {font-size: 15px;
-    padding-top:30px;
     }
     
     #pricing
-    {width: 25%;
-    height: 120%;
-    border: 3px solid green;margin-left: 40px;
-    margin-right: 10px;
-    border-radius: 2%; 
+    {width: 20%;
+    height: 90%;
+    border: 3px solid rgb(5, 144, 5);
+    margin-left: 60px;
+    margin-right: 15px;
+    border-radius: 5px; 
+    padding-top:10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
     }
     
-    button {transform: translate(20%);
+    button {transform: translate(8%);
     width: 140px;
-    height: 50px;
+    height: 35px;
     border-radius: 5px;
-    background-color: green;
+    background-color: rgb(5, 144, 5);
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     }
     
     
@@ -93,12 +94,18 @@ body {background-color: gold;
     .footer  {display: grid;
     grid-template-columns: 100px
     100px 100px 300px;
-    color: blue;
-    padding-left: 180px;
-    
+    padding-left: 190px;
     }
     
-    .footer a {text-decoration: none;}
+    .footer a, .footer p  {text-decoration: none;
+    color: black;
+    font-size: 18px;}
     
     .footer a:hover{text-decoration: underline;
-    color: green;}
+    color: rgb(5, 144, 5);}
+    
+    
+    
+    @media only screen and (max-width: 880px) {
+      body{display: ;
+    }
