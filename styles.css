@@ -1,111 +1,121 @@
 body {background-color: gold;
-    color: rgb(5, 144, 5);}
-     
-    
-    
-    #nav-bar {position: fixed;
-    top:0;
-    background-color: gold;
-    border: 1px none;
-    border-width: thin;
-    margin-left: 0;
-    margin-right: 0;}
-    
-    .nav-title {font-size: xx-large;
-    padding-right: 60px;}
-    
-    .nav-link {font-size: x-large;
-    padding-right: 60px;
-    color: rgb(5, 144, 5);
-    text-decoration: none;}
-    
-    
-    
-    .form {padding-top: 20%;
-    padding-bottom: 20%;
-    padding-left: 29%;
-    padding-right: 29%;
-    text-align: center;
-    line-height: 30px;}
-    
-    
-    
-    .grid-container {display: grid;
-    grid-template-columns: 180px auto;
-    }
-    
-    #img {width: 40px;
-    padding-left: 100px;
-    padding-right: 25px;
-    padding-top: 80px;
-    }
-    
-    #text h2 {margin-top: 80px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    }
-    
-    #text p {padding-top: 0px;
-    margin-top: 1px;
-    font-size: 18px;}
-    
-    
-    
-    #how_we_teach {padding-top: 150px;
-    padding-bottom: 150px;
-    padding-left: 25%;}
-    
-    
-    
-    .flex-container {
-    padding-top: 150px;padding-bottom: 150px;
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: gold;
-    }
-    
-    .flex-container p {font-size: 15px;
-    }
-    
-    #pricing
-    {width: 20%;
-    height: 90%;
-    border: 3px solid rgb(5, 144, 5);
-    margin-left: 60px;
-    margin-right: 15px;
-    border-radius: 5px; 
-    padding-top:10px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
-    }
-    
-    button {transform: translate(8%);
-    width: 140px;
-    height: 35px;
-    border-radius: 5px;
-    background-color: rgb(5, 144, 5);
-    color: white;
-    padding-bottom: 10px;
-    }
-    
-    
-    
-    .footer  {display: grid;
-    grid-template-columns: 100px
-    100px 100px 300px;
-    padding-left: 190px;
-    }
-    
-    .footer a, .footer p  {text-decoration: none;
-    color: black;
-    font-size: 18px;}
-    
-    .footer a:hover{text-decoration: underline;
-    color: rgb(5, 144, 5);}
-    
-    
-    
-    @media only screen and (max-width: 880px) {
-      body{display: ;
-    }
+  color: rgb(5, 144, 5);}
+   
+  
+  
+  #header {position: fixed;
+  top:0;
+  background-color: gold;
+  border: 1px none;
+  border-width: thin;
+  margin-left: 0;
+  margin-right: 0;}
+  
+  .nav-title {font-size: xx-large;
+  padding-right: 60px;}
+  
+  .nav-link {font-size: x-large;
+  padding-right: 60px;
+  color: rgb(5, 144, 5);
+  text-decoration: none;}
+  
+  
+  
+  .form {padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 29%;
+  padding-right: 29%;
+  text-align: center;
+  line-height: 30px;}
+  
+  
+  
+  .grid-container {display: grid;
+  grid-template-columns: 180px auto;
+  }
+  
+  #img {width: 40px;
+  padding-left: 100px;
+  padding-right: 25px;
+  padding-top: 80px;
+  }
+  
+  #text h2 {margin-top: 80px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  }
+  
+  #text p {padding-top: 0px;
+  margin-top: 1px;
+  font-size: 18px;}
+  
+  
+  
+  #video {margin-top: 150px;
+  margin-left: 90px;
+  border: none;
+  position: relativee;
+  width: 80%;
+  height: 70%;
+  }
+  
+  
+  
+  
+  .flex-container {
+  padding-top: 150px;padding-bottom: 150px;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: gold;
+  }
+  
+  .flex-container p {font-size: 15px;
+  }
+  
+  #pricing
+  {width: 20%;
+  height: 90%;
+  border: 3px solid rgb(5, 144, 5);
+  margin-left: 60px;
+  margin-right: 15px;
+  border-radius: 5px; 
+  padding-top:10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  }
+  
+  button {transform: translate(8%);
+  width: 140px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgb(5, 144, 5);
+  color: white;
+  padding-bottom: 10px;
+  }
+  
+  
+  
+  .footer  {display: grid;
+  grid-template-columns: 100px
+  100px 100px 300px;
+  padding-left: 190px;
+  }
+  
+  .footer a, .footer p  {text-decoration: none;
+  color: black;
+  font-size: 18px;}
+  
+  .footer a:hover{text-decoration: underline;
+  color: rgb(5, 144, 5);}
+  
+  
+  
+  @media sreen and (max-width: 880px) {
+  
+  header {}
+  
+  
+  
+  }
+  
