@@ -1,160 +1,201 @@
-body {background-color: gold;
-  color: rgb(5, 144, 5);}
-   
-  
-  
-  #header {position: fixed;
-  top:0;
+body {
+  background-color: gold;
+  color: rgb(5, 144, 5);
+}
+
+
+
+#header {
+  position: fixed;
+  top: 0;
   background-color: gold;
   border: 1px none;
   border-width: thin;
   margin-left: 0;
-  margin-right: 0;}
-  
-  .nav-title {font-size: xx-large;
-  padding-right: 60px;}
-  
-  .nav-link {font-size: x-large;
+  margin-right: 0;
+}
+
+.nav-title {
+  font-size: xx-large;
+  padding-right: 60px;
+}
+
+.nav-link {
+  font-size: x-large;
   padding-right: 60px;
   color: rgb(5, 144, 5);
-  text-decoration: none;}
-  
-  
-  
-  .form {padding-top: 20%;
+  text-decoration: none;
+}
+
+
+
+.form {
+  padding-top: 20%;
   padding-bottom: 20%;
   padding-left: 29%;
   padding-right: 29%;
   text-align: center;
-  line-height: 30px;}
-  
-  
-  
-  .grid-container {display: grid;
+  line-height: 30px;
+}
+
+
+
+.grid-container {
+  display: grid;
   grid-template-columns: 180px auto;
-  }
-  
-  #img {width: 40px;
+}
+
+#img {
+  width: 40px;
   padding-left: 100px;
   padding-right: 25px;
   padding-top: 80px;
-  }
-  
-  #text h2 {margin-top: 80px;
+}
+
+#text h2 {
+  margin-top: 80px;
   margin-bottom: 0px;
   font-size: 20px;
-  }
-  
-  #text p {padding-top: 0px;
+}
+
+#text p {
+  padding-top: 0px;
   margin-top: 1px;
-  font-size: 18px;}
-  
-  
-  
-  #video {margin-top: 150px;
+  font-size: 18px;
+}
+
+
+
+#video {
+  margin-top: 150px;
   margin-left: 90px;
   border: none;
   position: relativee;
   width: 80%;
   height: 70%;
-  }
-  
-  
-  
-  .flex-container {
-  padding-top: 150px;padding-bottom: 150px;
+}
+
+
+
+.flex-container {
+  padding-top: 150px;
+  padding-bottom: 150px;
   display: flex;
   flex-wrap: nowrap;
   background-color: gold;
-  }
-  
-  .flex-container p {font-size: 15px;
-  }
-  
-  #pricing
-  {width: 20%;
+}
+
+.flex-container p {
+  font-size: 15px;
+}
+
+#pricing {
+  width: 20%;
   height: 90%;
   border: 3px solid rgb(5, 144, 5);
   margin-left: 60px;
   margin-right: 15px;
-  border-radius: 5px; 
-  padding-top:10px;
+  border-radius: 5px;
+  padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 10px;
-  }
-  
-  button {transform: translate(8%);
+}
+
+button {
+  transform: translate(8%);
   width: 140px;
   height: 35px;
   border-radius: 5px;
   background-color: rgb(5, 144, 5);
   color: white;
   padding-bottom: 10px;
-  }
-  
-  
-  
-  .footer  {display: grid;
-  grid-template-columns: 100px
-  100px 100px 300px;
+}
+
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 300px;
   padding-left: 190px;
-  }
-  
-  .footer a, .footer p  {text-decoration: none;
+}
+
+.footer a,
+.footer p {
+  text-decoration: none;
   color: black;
-  font-size: 18px;}
-  
-  .footer a:hover{text-decoration: underline;
-  color: rgb(5, 144, 5);}
-  
-  
-  
-  @media screen and (max-width: 880px) {
-  
-  header {width: 50px;}
-  
-  #header-img {display: none;}
-  
-  .nav-title {display: block;
-  font-size: 10px;
-  color: gray;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  font-size: 18px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: rgb(5, 144, 5);
+}
+
+
+
+@media screen and (max-width: 880px) {
+
+  header {
+    width: 50px;
   }
-  
-  .nav-link {display: block;
-  font-size: 20px;
-  padding-top: 25px;
+
+  #header-img {
+    width: 20px;
+    padding-top: 5px;
+    padding-left: 24px;
   }
-  
-  .form {text-align: center;
-  padding-left: 185px;
-  font-size: 20px;}
-  
-  input {width: 130px;}
-  
-  .flex-container {display: block;
-  padding-left: 225px;}
-  
+
+  .nav-title {
+    display: block;
+    font-size: 10px;
+    color: gray;
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    display: block;
+    font-size: 23px;
+    padding-top: 16px;
+  }
+
+  .form {
+    text-align: center;
+    padding-left: 200px;
+    font-size: 20px;
+  }
+
+  input {
+    width: 140px;
+  }
+
+  .flex-container {
+    display: block;
+    padding-left: 225px;
+  }
+
   #pricing {
-  height: 250px;
-  width: 170px;
-  margin-bottom: 10px;}
-  
-  .footer  {display: block;
-  margin-top: 5px;
-  padding-left: 0px;
-  width: 150px;
-  text-align: left;
+    height: 250px;
+    width: 170px;
+    margin-bottom: 50px;
   }
-  
-  .footer a, .footer p {font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 10px;
-  color:gray;}
-  
+
+  .footer {
+    display: block;
+    margin-top: 5px;
+    padding-left: 0px;
+    width: 150px;
+    text-align: left;
   }
-  
+
+  .footer a,
+  .footer p {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    color: gray;
+  }
+
+}
