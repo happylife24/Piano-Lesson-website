@@ -68,11 +68,11 @@ body {
 
 #video {
   margin-top: 150px;
-  margin-left: 90px;
+  margin-left: 190px;
   border: none;
   position: relativee;
-  width: 80%;
-  height: 70%;
+  width: 500px;
+  height: 250px;
 }
 
 
@@ -135,7 +135,7 @@ button {
 
 
 @media screen and (max-width: 880px) {
-  
+
   header {
     width: 50px;
   }
@@ -170,8 +170,13 @@ button {
     width: 140px;
   }
 
-  .grid-container {padding-left: 50px;
-  padding-right: 50px;}
+  .grid-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #video {
+  margin-left: 150px;}
 
   .flex-container {
     display: block;
