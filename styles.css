@@ -200,10 +200,11 @@ button {
 
   .footer a,
   .footer p {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 10px;
+    width: 120px;
     color: gray;
   }
 
