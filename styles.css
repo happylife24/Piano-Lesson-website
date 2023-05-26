@@ -1,6 +1,7 @@
 body {
-  background-color: gold;
-  color: rgb(5, 144, 5);
+  background-color: #f5deb3;
+  color: #FF0066;
+
 }
 
 
@@ -8,7 +9,7 @@ body {
 #header {
   position: fixed;
   top: 0;
-  background-color: gold;
+  background-color: #f5deb3;
   border: 1px none;
   border-width: thin;
   margin-left: 0;
@@ -23,7 +24,7 @@ body {
 .nav-link {
   font-size: x-large;
   padding-right: 60px;
-  color: rgb(5, 144, 5);
+  color: #FF0066;
   text-decoration: none;
 }
 
@@ -82,7 +83,7 @@ body {
   padding-bottom: 150px;
   display: flex;
   flex-wrap: nowrap;
-  background-color: gold;
+  background-color: #f5deb3;
 }
 
 .flex-container p {
