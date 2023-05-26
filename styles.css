@@ -39,6 +39,9 @@ body {
   line-height: 30px;
 }
 
+#submit {background-color:rgb(5, 144, 5);
+color: white;
+}
 
 
 .grid-container {
@@ -109,7 +112,7 @@ button {
   height: 35px;
   border-radius: 5px;
   background-color: rgb(5, 144, 5);
-  color: white;
+  color:  white;
   padding-bottom: 10px;
 }
 
@@ -150,7 +153,7 @@ button {
   .nav-title {
     display: block;
     font-size: 10px;
-    color: gray;
+    color:  #FF0066;
     padding-top: 5px;
     padding-left: 20px;
   }
