@@ -127,13 +127,11 @@ button {
 .footer a,
 .footer p {
   text-decoration: none;
-  color: pink;
   font-size: 18px;
 }
 
 .footer a:hover {
   text-decoration: underline;
-  color: rgb(5, 144, 5);
 }
 
 
