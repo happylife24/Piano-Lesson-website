@@ -96,7 +96,7 @@ color: white;
 #pricing {
   width: 20%;
   height: 90%;
-  border: 3px solid rgb(5, 144, 5);
+  border: 3px solid rgba(0, 0, 0, 0.326);
   margin-left: 60px;
   margin-right: 15px;
   border-radius: 5px;
