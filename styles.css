@@ -41,6 +41,7 @@ body {
 
 #submit {background-color:rgb(5, 144, 5);
 color: white;
+cursor: pointer;
 }
 
 
@@ -109,11 +110,11 @@ color: white;
 button {
   transform: translate(8%);
   width: 140px;
-  height: 35px;
+  height: 35px;padding-bottom: 10px;
   border-radius: 5px;
   background-color: rgb(5, 144, 5);
   color:  white;
-  padding-bottom: 10px;
+  cursor: pointer;
 }
 
 
@@ -128,6 +129,7 @@ button {
 .footer p {
   text-decoration: none;
   font-size: 18px;
+  color: rgba(0, 0, 0, 0.581);
 }
 
 .footer a:hover {
