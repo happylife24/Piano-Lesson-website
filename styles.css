@@ -1,12 +1,19 @@
+:root {
+  --color-orange: #f5deb3;
+  --color-pink: #FF0066;
+  --color-green:#059005;
+}
+
+
 body {
-  background-color: #f5deb3;
-  color: #FF0066;
+  background-color: var(--color-orange);
+  color: var(--color-pink);
 }
 
 
 
 #header {
-  background-color: #f5deb3;
+  background-color: var(--color-orange);
   position: fixed;
   top: 0;
   border: 1px none;
@@ -21,7 +28,7 @@ body {
 }
 
 .nav-link {
-  color: #FF0066;
+  color: var(--color-pink);
   text-decoration: none;
   font-size: x-large;
   padding-right: 60px;
@@ -39,7 +46,7 @@ body {
 }
 
 #submit {
-  background-color: rgb(5, 144, 5);
+  background-color: var(--color-green);
   color: white;
   cursor: pointer;
   border-radius: 5px;
@@ -85,7 +92,7 @@ body {
 
 
 .flex-container {
-  background-color: #f5deb3;
+  background-color: var(--color-orange);
   display: flex;
   flex-wrap: nowrap;
   padding-top: 150px;
@@ -110,7 +117,7 @@ body {
 }
 
 button {
-  background-color: rgb(5, 144, 5);
+  background-color: var(--color-green);
   color: white;
   cursor: pointer;
   transform: translate(8%);
@@ -156,7 +163,7 @@ button {
   .nav-title {
     display: block;
     font-size: 10px;
-    color: #FF0066;
+    color: var(--color-pink);
     padding-top: 5px;
     padding-left: 20px;
   }
