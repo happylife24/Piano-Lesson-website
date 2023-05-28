@@ -125,6 +125,7 @@ button {
   transform: translate(8%);
   width: 140px;
   height: 35px;
+  padding-top: 5px;
   padding-bottom: 10px;
   border-radius: 5px;
 }
