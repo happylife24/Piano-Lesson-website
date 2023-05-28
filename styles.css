@@ -2,6 +2,7 @@
   --color-orange: #f5deb3;
   --color-pink: #FF0066;
   --color-green:#059005;
+  --color-white:#ffffff;
 }
 
 
@@ -47,7 +48,7 @@ body {
 
 #submit {
   background-color: var(--color-green);
-  color: white;
+  color: var(--color-white);
   cursor: pointer;
   border-radius: 5px;
 }
@@ -118,7 +119,7 @@ body {
 
 button {
   background-color: var(--color-green);
-  color: white;
+  color: var(--color-white);
   cursor: pointer;
   transform: translate(8%);
   width: 140px;
