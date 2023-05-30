@@ -7,8 +7,8 @@ Link:
 Languages and tools:
 <br>
    <ul>
-     <li>HTML</li>
      <li>CSS</li>
+     <li>HTML</li>
      <li></li>
   </ul>
  <br>
