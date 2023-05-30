@@ -82,14 +82,12 @@ body {
 
 
 
-#video {
-  position: relative;
+#video {margin-top: 150px;
+  margin-left: 90px;
   border: none;
-  margin-top: 150px;
-  margin-left: 190px;
-  width: 500px;
-  height: 250px;
-}
+  width:750px;
+  height:300px
+  }
 
 
 
