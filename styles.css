@@ -83,10 +83,10 @@ body {
 
 
 #video {margin-top: 150px;
-  margin-left: 90px;
+  margin-left: 150px;
   border: none;
-  width:750px;
-  height:300px
+  width: 70%;
+  height: auto;
   }
 
 
