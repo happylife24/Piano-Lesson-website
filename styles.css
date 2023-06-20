@@ -101,6 +101,11 @@ body {
 
 .flex-container p {
   font-size: 15px;
+  padding-left: 10px;
+}
+
+.flex-container h2 {
+  padding-left: 10px;
 }
 
 #pricing {
@@ -112,7 +117,7 @@ body {
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-right: 10px;
 }
 
