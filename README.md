@@ -9,7 +9,7 @@ Languages and tools:
    <ul>
      <li>CSS</li>
      <li>HTML</li>
-     <li></li>
+     <li>used CSS Media Queries</li>
   </ul>
  <br>
  <br>
