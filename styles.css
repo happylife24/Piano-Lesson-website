@@ -26,7 +26,10 @@ body {
 }
 
 .nav-title {
+  color: var(--color-green);
   font-size: xx-large;
+  font-weight: 1000;
+  padding-left: 10px;
   padding-right: 60px;
 }
 
@@ -34,7 +37,8 @@ body {
   color: var(--color-pink);
   text-decoration: none;
   font-size: x-large;
-  padding-right: 60px;
+  padding-left: 80px;
+  padding-right: 100px;
 }
 
 
