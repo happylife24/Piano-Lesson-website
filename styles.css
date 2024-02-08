@@ -159,10 +159,14 @@ button {
 
 
 
-@media screen and (max-width: 880px) {
-
+@media screen and (max-width: 1200px) {
   header {
-    width: 50px;
+      position: absolute;
+      border: 1px solid green;
+      border-width: thin;
+      margin-left: 0;
+      margin-right: 0;
+      width: 50px;
   }
 
   #header-img {
@@ -172,9 +176,10 @@ button {
   }
 
   .nav-title {
+    color: var(--color-green);
     display: block;
     font-size: 10px;
-    color: var(--color-pink);
+    font-weight: 1000;
     padding-top: 5px;
     padding-left: 20px;
   }
@@ -182,6 +187,7 @@ button {
   .nav-link {
     display: block;
     font-size: 23px;
+    padding-left: 0;
     padding-top: 16px;
   }
 
