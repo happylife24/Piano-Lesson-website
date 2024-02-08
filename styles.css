@@ -161,33 +161,35 @@ button {
 
 @media screen and (max-width: 1200px) {
   header {
-      position: absolute;
+      position: none;
       border: 1px solid green;
-      border-width: thin;
       margin-left: 0;
       margin-right: 0;
-      width: 50px;
+      max-width: 10%;
+      height: 100%;
   }
 
   #header-img {
     width: 20px;
     padding-top: 5px;
-    padding-left: 24px;
+    padding-left: 30px;
   }
 
   .nav-title {
     color: var(--color-green);
     display: block;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 1000;
     padding-top: 5px;
-    padding-left: 20px;
+    padding-left: 2px;
   }
 
   .nav-link {
     display: block;
     font-size: 23px;
+    margin-right: 0;
     padding-left: 0;
+    padding-right: 0;
     padding-top: 16px;
   }
 
