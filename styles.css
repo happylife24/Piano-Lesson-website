@@ -166,7 +166,7 @@ button {
       margin-left: 0;
       margin-right: 0;
       max-width: 10%;
-      height: 100%;
+      height: 60%;
   }
 
   #header-img {
@@ -192,6 +192,8 @@ button {
     padding-right: 0;
     padding-top: 16px;
   }
+
+
 
   .form {
     text-align: center;
@@ -241,5 +243,4 @@ button {
     width: 120px;
     color: gray;
   }
-
 }
