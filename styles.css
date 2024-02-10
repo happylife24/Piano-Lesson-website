@@ -109,6 +109,7 @@ body {
   flex-wrap: nowrap;
   padding-top: 150px;
   padding-bottom: 150px;
+  padding-left: 60px;
 }
 
 .flex-container p {
@@ -150,7 +151,7 @@ button {
 .footer {
   grid-template-columns: 100px 100px 100px 300px;
   display: grid;
-  padding-left: 190px;
+  padding-left: 360px;
 }
 
 .footer a,
