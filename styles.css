@@ -196,9 +196,17 @@ button {
     width: 140px;
   }
 
+
+  .subs {
+    font-size: large;
+    padding-top: 150px;
+    margin-left: 230px;
+    text-align: center;
+  }
+  
+
   .grid-container {
-    padding-left: 110px;
-    padding-right: 10px;
+    margin-left: -80px;
   }
 
   #video {
@@ -206,8 +214,8 @@ button {
   }
 
   .flex-container {
-    display: block;
-    padding-left: 150px;
+    display:grid;
+    margin-left: 130px;
   }
 
   #pricing {
