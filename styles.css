@@ -22,7 +22,7 @@ body {
   border-width: thin;
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
+  width: 150%;
 }
 
 .nav-title {
@@ -41,21 +41,13 @@ body {
   padding-right: 100px;
 }
 
-
-
-.form {
-  font-size: 30px; 
-  line-height: 30px;
-  padding-top: 20%;
-  padding-bottom: 20%;
+.subs {
+  font-size: large;
+  padding-top: 150px;
   text-align: center;
 }
 
-#form {
-  width: 370px;
-  padding-left: 420px;
-  padding-right: 420px;
-}
+
 
 
 
@@ -201,19 +193,6 @@ button {
     padding-left: 1px;
     padding-right: 0;
     padding-top: 20px;
-    width: 140px;
-  }
-
-
-
-  .form {
-    text-align: center;
-    width: 260px;
-    padding-left: 260px;
-    font-size: 20px;
-  }
-
-  input {
     width: 140px;
   }
 
