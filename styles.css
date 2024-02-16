@@ -49,8 +49,6 @@ body {
 
 
 
-
-
 #submit {
   background-color: var(--color-green);
   color: var(--color-white);
@@ -208,9 +206,9 @@ button {
   }
 
   .flex-container {
-    display:grid;
-    margin-left: 130px;
-  }
+    display: grid;
+    margin-left: 350px;
+}
 
   #pricing {
     height: 200px;
@@ -226,3 +224,30 @@ button {
     color: gray;
   }
 }
+
+
+
+@media screen and (max-width: 1000px) {
+  .flex-container {
+    display: grid;
+    margin-left: 250px;
+  }
+  }
+
+
+  
+@media screen and (max-width: 800px) {
+.flex-container {
+  display: grid;
+  margin-left: 150px;
+}
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    display: grid;
+    margin-left: 100px;
+  }
+  }
