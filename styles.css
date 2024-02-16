@@ -255,8 +255,43 @@ button {
 
 
 @media screen and (max-width: 400px) {
+  #header {
+    margin-left: 0px;
+  }
+
+  .nav-link {
+    margin-left: 120px;
+  }
+
+  
+
+  .subs {
+    margin-top: 170px;
+    margin-left: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+
+  #img {
+    width: 40px;
+    padding-left: 110px;
+    padding-right: 25px;
+    padding-top: 80px;
+  }
+
+  #video {margin-top: 150px;
+    margin-left: 50px;
+    border: none;
+    width: 70%;
+    height: auto;
+    }
+
   .flex-container {
     display: grid;
+    padding-left: 0px;
     margin-left: 0px;
   }
   }
