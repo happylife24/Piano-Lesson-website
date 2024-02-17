@@ -256,11 +256,16 @@ button {
 
 @media screen and (max-width: 400px) {
   #header {
-    margin-left: 0px;
+    background-color: var(--color-orange);
+    position: fixed;
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
   }
 
   .nav-link {
     margin-left: 120px;
+    margin-bottom: 0px;
   }
 
   
