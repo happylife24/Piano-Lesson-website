@@ -6,12 +6,10 @@
 }
 
 
-
 body {
   background-color: var(--color-orange);
   color: var(--color-pink);
 }
-
 
 
 #header {
@@ -48,14 +46,12 @@ body {
 }
 
 
-
 #submit {
   background-color: var(--color-green);
   color: var(--color-white);
   cursor: pointer;
   border-radius: 5px;
 }
-
 
 
 .grid-container {
@@ -83,14 +79,12 @@ body {
 }
 
 
-
 #video {margin-top: 150px;
   margin-left: 180px;
   border: none;
   width: 70%;
   height: auto;
-  }
-
+}
 
 
 .flex-container {
@@ -187,7 +181,6 @@ button {
     width: 140px;
   }
 
-
   .subs {
     font-size: large;
     padding-top: 150px;
@@ -195,7 +188,6 @@ button {
     text-align: center;
   }
   
-
   .grid-container {
     margin-left: -80px;
   }
@@ -207,7 +199,7 @@ button {
   .flex-container {
     display: grid;
     margin-left: 350px;
-}
+  }
 
   #pricing {
     height: 200px;
@@ -231,7 +223,7 @@ button {
     display: grid;
     margin-left: 250px;
   }
-  }
+}
 
 
 
@@ -239,7 +231,7 @@ button {
 .flex-container {
   display: grid;
   margin-left: 150px;
-}
+  }
 }
 
 
@@ -249,7 +241,7 @@ button {
     display: grid;
     margin-left: 100px;
   }
-  }
+}
 
 
 
@@ -262,12 +254,22 @@ button {
     max-height: 40%;
   }
 
+  btn {
+    display: block;
+  }
+
+  #mobile {
+    background-color: black;
+    height: 7px;
+    width: 35px;
+    margin: 5px 250px;
+  }
+  
   .nav-link {
+    display: none;
     margin-left: 120px;
     margin-bottom: 0px;
   }
-
-  
 
   .subs {
     margin-top: 170px;
@@ -291,15 +293,11 @@ button {
     border: none;
     width: 70%;
     height: auto;
-    }
+  }
 
   .flex-container {
     display: grid;
     padding-left: 0px;
     margin-left: 0px;
   }
-
-  button {
-    display: relative;
-  }
-  }
+}
