@@ -254,7 +254,7 @@ button {
     max-height: 40%;
   }
 
-  btn {
+  .btn {
     display: block;
   }
 
@@ -265,8 +265,11 @@ button {
     margin: 5px 250px;
   }
   
-  .nav-link {
+  #list {
     display: none;
+  }
+
+  .nav-link {
     margin-left: 120px;
     margin-bottom: 0px;
   }
