@@ -128,7 +128,6 @@ button {
   background-color: var(--color-green);
   color: var(--color-white);
   cursor: pointer;
-  transform: translate(8%);
   width: 140px;
   height: 35px;
   padding-top: 5px;
