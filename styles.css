@@ -258,7 +258,7 @@ button {
     display: block;
   }
 
-  #mobile {
+  .mobile {
     background-color: black;
     height: 7px;
     width: 35px;
