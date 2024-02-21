@@ -248,12 +248,11 @@ button {
 @media screen and (max-width: 400px) {
   #header {
     background-color: var(--color-orange);
-    position: fixed;
-    display: block;
-    max-width: 100%;
-    max-height: 40%;
+    position: relative;
+    top: 0;
+    width: 150%;
   }
-
+  
   .btn {
     display: block;
   }
@@ -267,18 +266,20 @@ button {
   
   #myList {
     display: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .nav-link {
     margin-left: 120px;
-    margin-bottom: 0px;
   }
 
   .subs {
-    margin-top: 170px;
     margin-left: 0;
+    padding-top: 70px;
+    margin-bottom: 90px;
   }
-
+  
   .grid-container {
     display: grid;
     grid-template-columns: 180px auto;
