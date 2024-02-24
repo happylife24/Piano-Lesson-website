@@ -262,6 +262,8 @@ button {
     height: 7px;
     width: 35px;
     margin: 5px 250px;
+    margin-top: 0px;
+    padding-top: 0px;
   }
   
   #myList {
@@ -277,7 +279,7 @@ button {
   .subs {
     margin-left: 0;
     padding-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 180px;
   }
   
   .grid-container {
