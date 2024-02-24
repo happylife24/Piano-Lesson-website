@@ -276,13 +276,14 @@ button {
 
   .subs {
     margin-left: 0;
-    padding-top: 70px;
-    margin-bottom: 90px;
+    padding-top: 150px;
+    margin-bottom: 150px;
   }
   
   .grid-container {
     display: grid;
     grid-template-columns: 180px auto;
+    margin-top: -50px;
   }
 
   #img {
@@ -292,16 +293,21 @@ button {
     padding-top: 80px;
   }
 
-  #video {margin-top: 150px;
-    margin-left: 50px;
+  #video {
     border: none;
-    width: 70%;
     height: auto;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    width: 70%;
   }
 
   .flex-container {
     display: grid;
-    padding-left: 0px;
-    margin-left: 0px;
+    margin-left: -70px;
+  }
+
+  .footer {
+    margin-top: -120px;
   }
 }
