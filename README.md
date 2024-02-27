@@ -13,6 +13,3 @@ Languages and tools:
      <li>JavaScript</li>
      <li>used CSS Media Queries</li>
   </ul>
- <br>
- <br>
-Screenshots:
