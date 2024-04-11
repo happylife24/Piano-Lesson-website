@@ -1,5 +1,5 @@
 :root {
-  --color-orange: #f5deb3;
+  --color-orange: #f8f7f6;
   --color-pink: #FF0066;
   --color-green:#059005;
   --color-white:#ffffff;
@@ -64,6 +64,7 @@ body {
   padding-left: 260px;
   padding-right: 25px;
   padding-top: 80px;
+  background-image: #FF0066;
 }
 
 #text h2 {
@@ -310,6 +311,9 @@ button {
   }
 
   .footer {
-    margin-top: -120px;
+    display: flex;
+  }
+  .footer p {
+    text-align: end;
   }
 }
