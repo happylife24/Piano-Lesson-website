@@ -1,5 +1,4 @@
 :root {
-  --color-orange: #f8f7f6;
   --color-pink: #FF0066;
   --color-green:#059005;
   --color-white:#ffffff;
@@ -7,19 +6,20 @@
 
 
 body {
-  background-color: var(--color-orange);
+  background-color: var(--color-white);
   color: var(--color-pink);
 }
 
 
 #header {
-  background-color: var(--color-orange);
-  position: fixed;
-  top: 0;
+  background-color: var(--color-white);
   border: 1px none;
   border-width: thin;
+  top: 0;
   margin-left: 0;
   margin-right: 0;
+  position: fixed;
+  top: 0;
   width: 150%;
 }
 
@@ -33,10 +33,14 @@ body {
 
 .nav-link {
   color: var(--color-green);
-  text-decoration: none;
   font-size: x-large;
-  padding-left: 290px;
   margin-right: -110px;
+  padding-left: 290px;
+  text-decoration: none;
+}
+
+input {
+  margin-top: 10px;
 }
 
 .subs {
@@ -48,9 +52,9 @@ body {
 
 #submit {
   background-color: var(--color-green);
+  border-radius: 5px;
   color: var(--color-white);
   cursor: pointer;
-  border-radius: 5px;
 }
 
 
@@ -60,11 +64,11 @@ body {
 }
 
 #img {
-  width: 40px;
+  background-image: #FF0066;
   padding-left: 260px;
   padding-right: 25px;
   padding-top: 80px;
-  background-image: #FF0066;
+  width: 40px;
 }
 
 #text h2 {
@@ -75,21 +79,22 @@ body {
 
 #text p {
   font-size: 18px;
-  padding-top: 0px;
   margin-top: 1px;
+  padding-top: 0px;
 }
 
 
-#video {margin-top: 150px;
-  margin-left: 180px;
+#video {
   border: none;
-  width: 70%;
   height: auto;
+  margin-top: 150px;
+  margin-left: 180px;
+  width: 70%;  
 }
 
 
 .flex-container {
-  background-color: var(--color-orange);
+  background-color: var(--color-white);
   display: flex;
   flex-wrap: nowrap;
   padding-top: 150px;
@@ -107,36 +112,40 @@ body {
 }
 
 #pricing {
-  width: 20%;
-  height: 90%;
   border: 3px solid rgba(0, 0, 0, 0.326);
+  border-radius: 5px;
+  height: 90%;
   margin-left: 60px;
   margin-right: 15px;
-  border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 10px;
+  width: 20%;
 }
 
 button {
   background-color: var(--color-green);
+  border-radius: 5px;
   color: var(--color-white);
   cursor: pointer;
-  width: 140px;
   height: 35px;
+  width: 140px;
   padding-top: 5px;
-  padding-bottom: 10px;
-  border-radius: 5px;
+  padding-bottom: 10px; 
 }
-
 
 .footer a,
 .footer p {
-  color: rgba(0, 0, 0, 0.581);
-  text-decoration: none;
+  color: black;
   font-size: 18px;
+  margin-bottom: 40px;
   text-align: center;
+  text-decoration: none;
+}
+
+.footer a {
+  color: gray;
 }
 
 .footer a:hover {
@@ -147,12 +156,13 @@ button {
 
 @media screen and (max-width: 1200px) {
   header {
-      position: none;
-      border: 1px solid green;
-      margin-left: 0;
-      margin-right: 0;
-      max-width: 10%;
-      height: 60%;
+    border: 1px solid green;
+    height: 60%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 10%;
+    position: none;
+    
   }
 
   #header-img {
@@ -211,9 +221,7 @@ button {
   .footer a,
   .footer p {
     font-size: 15px;
-    margin-bottom: 10px;
     padding-top: 10px;
-    color: gray;
   }
 }
 
@@ -229,9 +237,9 @@ button {
 
 
 @media screen and (max-width: 800px) {
-.flex-container {
-  display: grid;
-  margin-left: 150px;
+  .flex-container {
+    display: grid;
+    margin-left: 150px;
   }
 }
 
@@ -248,7 +256,7 @@ button {
 
 @media screen and (max-width: 400px) {
   #header {
-    background-color: var(--color-orange);
+    background-color: var(--color-white);
     position: relative;
     top: 0;
     width: 150%;
@@ -261,10 +269,10 @@ button {
   .mobile {
     background-color: black;
     height: 7px;
-    width: 35px;
     margin: 5px 250px;
     margin-top: 0px;
     padding-top: 0px;
+    width: 35px;
   }
   
   #myList {
@@ -278,9 +286,9 @@ button {
   }
 
   .subs {
-    margin-left: 0;
     padding-top: 150px;
     margin-bottom: 180px;
+    margin-left: 0;
   }
   
   .grid-container {
@@ -290,10 +298,10 @@ button {
   }
 
   #img {
-    width: 40px;
     padding-left: 110px;
     padding-right: 25px;
     padding-top: 80px;
+    width: 40px;
   }
 
   #video {
@@ -308,12 +316,5 @@ button {
   .flex-container {
     display: grid;
     margin-left: -70px;
-  }
-
-  .footer {
-    display: flex;
-  }
-  .footer p {
-    text-align: end;
   }
 }
