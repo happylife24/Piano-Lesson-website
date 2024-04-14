@@ -53,6 +53,10 @@ input {
   cursor: pointer;
 }
 
+.btn {
+  display: none;
+}
+
 
 .grid-container {
   display: grid;
