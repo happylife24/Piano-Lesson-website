@@ -15,7 +15,6 @@ body {
   background-color: var(--color-white);
   border: 1px none;
   border-width: thin;
-  top: 0;
   margin-left: 0;
   margin-right: 0;
   position: fixed;
@@ -27,15 +26,13 @@ body {
   color: var(--color-green);
   font-size: xx-large;
   font-weight: 1000;
-  padding-left: 5px;
-  padding-right: 60px;
 }
 
 .nav-link {
   color: var(--color-green);
   font-size: x-large;
-  margin-right: -110px;
-  padding-left: 290px;
+  margin-right: 40px;
+  padding-left: 160px;
   text-decoration: none;
 }
 
@@ -257,39 +254,49 @@ button {
 
 @media screen and (max-width: 400px) {
   #header {
-    background-color: var(--color-white);
     position: relative;
     top: 0;
-    width: 150%;
-  }
-  
-  .btn {
-    display: block;
   }
 
-  .mobile {
-    background-color: black;
-    height: 7px;
-    margin: 5px 250px;
-    margin-top: 0px;
-    padding-top: 0px;
-    width: 35px;
+  #header-img {
+    width: 10vw;
+    padding-left: 30px;
+    margin-bottom: -10px;
   }
-  
+
+  .nav-title,
+  .nav-link,
+  .subs,
+  input,
+  #text h2,
+  #text p,
+  button
+  {
+    font-size: 2vw;
+  }
+
+  .btn {
+    display: block;
+    font-size: 3vw;
+    color: green;
+    text-decoration: none;
+  }
+
   #myList {
     display: none;
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
 
+
   .nav-link {
     margin-left: 120px;
   }
 
   .subs {
+    margin-left: 0;
     padding-top: 150px;
     margin-bottom: 180px;
-    margin-left: 0;
   }
   
   .grid-container {
@@ -299,10 +306,10 @@ button {
   }
 
   #img {
+    width: 40px;
     padding-left: 110px;
     padding-right: 25px;
     padding-top: 80px;
-    width: 40px;
   }
 
   #video {
@@ -317,5 +324,21 @@ button {
   .flex-container {
     display: grid;
     margin-left: -70px;
+    }
+
+  .flex-container h2,
+  .flex-container p {
+    font-size: 1.9vw;
   }
-}.
+
+  .footer a,
+  .footer p {
+    color: black;
+    font-size: 1.6vw;
+    margin-bottom: 50px;
+  }
+
+  .footer a{
+    color: gray;
+  }
+}
