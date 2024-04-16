@@ -22,10 +22,18 @@ body {
   width: 150%;
 }
 
+#header-img {
+  width: 50px;
+}
+
 .nav-title {
   color: var(--color-green);
   font-size: xx-large;
   font-weight: 1000;
+}
+
+.nav-txt {
+  text-decoration: none;
 }
 
 .nav-link {
@@ -277,16 +285,18 @@ button {
   #text p,
   button
   {
-    font-size: 2vw;
+    font-size: 5.5vw;
   }
 
   .btn {
+    width: 0px;
+    height: 0px;
+    color: black;
     display: block;
-    font-size: 3vw;
-    color: green;
-    text-decoration: none;
-    padding-top: 70px;
+    font-size: 9vw;
+    margin-top: 65px;
     margin-left: 150px;
+    text-decoration: none;
   }
 
   #myList {
@@ -302,10 +312,15 @@ button {
     margin-left: -60px;
   }
 
+  .nav-txt {
+    color: black;
+  }
+
   .nav-link {
-    margin-left: -130px;
+    color: black;
+    margin-left: -50px;
     padding-top: 20px;
-    font-size: 3vw;
+    font-size: 7vw;
   }
 
   .subs {
@@ -343,13 +358,13 @@ button {
 
   .flex-container h2,
   .flex-container p {
-    font-size: 1.9vw;
+    font-size: 5.8vw;
   }
 
   .footer a,
   .footer p {
     color: black;
-    font-size: 1.6vw;
+    font-size: 5vw;
     margin-bottom: 50px;
   }
 
