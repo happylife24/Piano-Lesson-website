@@ -27,12 +27,12 @@ body {
 }
 
 .nav-title {
-  color: var(--color-green);
   font-size: xx-large;
   font-weight: 1000;
 }
 
 .nav-txt {
+  color: var(--color-green);
   text-decoration: none;
 }
 
@@ -172,7 +172,6 @@ button {
     margin-right: 0;
     max-width: 10%;
     position: none;
-    
   }
 
   #header-img {
@@ -182,7 +181,6 @@ button {
   }
 
   .nav-title {
-    color: var(--color-green);
     display: block;
     font-size: 14px;
     font-weight: 1000;
@@ -267,6 +265,8 @@ button {
 @media screen and (max-width: 400px) {
   #header {
     display: flex;
+    max-width: 100%;
+    height: auto;
   }
 
   #header-img {
@@ -294,8 +294,8 @@ button {
     color: black;
     display: block;
     font-size: 9vw;
-    margin-top: 65px;
-    margin-left: 150px;
+    margin-top: 55px;
+    margin-right: 100px;
     text-decoration: none;
   }
 
@@ -314,11 +314,12 @@ button {
 
   .nav-txt {
     color: black;
+    font-size: 4vw;
   }
 
   .nav-link {
     color: black;
-    margin-left: -50px;
+    margin-left: -150px;
     padding-top: 20px;
     font-size: 7vw;
   }
