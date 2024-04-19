@@ -1,13 +1,13 @@
 :root {
-  --color-pink: #FF0066;
-  --color-green: #059005;
+  --color-black: rgba(23, 19, 19, 0.627);
+  --color-green: rgb(6, 158, 6);
   --color-lightgray: rgba(245, 227, 227, 0.903);
+  --color-white: rgba(255, 255, 255, 0.965);
 }
 
 
 body {
   background-color: var(--color-lightgray);
-  color: var(--color-pink);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,7 +49,15 @@ input {
   margin-top: 20px;
 }
 
+#email {
+  border: 1px solid var(--color-white);
+  border-radius: 40px ;
+  height: 30px;
+  width: 400px;
+}
+
 .subs {
+  color: var(--color-black);
   font-size: large;
   padding-top: 150px;
   text-align: center;
@@ -57,6 +65,7 @@ input {
 
 #submit {
   background-color: var(--color-green);
+  border: 1px solid var(--color-green);
   border-radius: 5px;
   color: var(--color-lightgray);
   cursor: pointer;
@@ -73,7 +82,6 @@ input {
 }
 
 #img {
-  background-image: #FF0066;
   padding-left: 260px;
   padding-right: 25px;
   padding-top: 80px;
@@ -81,12 +89,14 @@ input {
 }
 
 #text h2 {
+  color: var(--color-black);
   font-size: 20px;
   margin-top: 80px;
   margin-bottom: 0px;
 }
 
 #text p {
+  color: var(--color-black);
   font-size: 18px;
   margin-top: 1px;
   padding-top: 0px;
@@ -103,6 +113,7 @@ input {
 
 
 .flex-container {
+  color: var(--color-black);
   background-color: var(--color-lightgray);
   display: flex;
   flex-wrap: nowrap;
@@ -121,8 +132,8 @@ input {
 }
 
 #pricing {
-  background-color: white;
-  border: 3px solid white;
+  background-color: var(--color-white);
+  border: 3px solid var(--color-white);
   border-radius: 7px;
   height: 90%;
   margin-left: 60px;
@@ -135,14 +146,15 @@ input {
 }
 
 button {
-  background-color: black;
-  border: 1px solid black;
+  background-color: var(--color-green);
+  border: 1px solid var(--color-green);
   border-radius: 5px;
-  color: white;
+  color: var(--color-lightgray);
   cursor: pointer;
+  font-size: 20px;
   height: 35px;
   width: 140px;
-  padding-top: 8px;
+  padding-top: 5px;
   padding-bottom: 10px; 
 }
 
@@ -150,7 +162,7 @@ button {
 
 .footer a,
 .footer p {
-  color: black;
+  color: var(--color-black);
   font-size: 18px;
   margin-bottom: 40px;
   text-align: center;
@@ -169,7 +181,7 @@ button {
 
 @media screen and (max-width: 1200px) {
   header {
-    border: 1px solid green;
+    border: 1px solid var(--color-green);
     height: 60%;
     margin-left: 0;
     margin-right: 0;
@@ -201,6 +213,10 @@ button {
     padding-right: 0;
     padding-top: 20px;
     width: 140px;
+  }
+
+  #email {
+    width: 300px;
   }
 
   .subs {
@@ -252,6 +268,10 @@ button {
     display: grid;
     margin-left: 150px;
   }
+
+  #email {
+    width: 200px;
+  }
 }
 
 
@@ -292,7 +312,7 @@ button {
   }
 
   .btn {
-    color: black;
+    color: var(--color-black);
     display: block;
     font-size: 9vw;
     width: 0px;
@@ -316,15 +336,19 @@ button {
   }
 
   .nav-txt {
-    color: black;
+    color: var(--color-black);
     font-size: 4vw;
   }
 
   .nav-link {
-    color: black;
+    color: var(--color-black);
     font-size: 7vw;
     margin-left: -150px;
     padding-top: 20px;
+  }
+
+  #email {
+    width: 240px;
   }
 
   .subs {
@@ -368,7 +392,7 @@ button {
 
   .footer a,
   .footer p {
-    color: black;
+
     font-size: 5vw;
     margin-bottom: 50px;
   }
