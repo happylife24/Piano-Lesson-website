@@ -5,4 +5,4 @@ function toggleList() {
     } else {
         x.style.display = "block";
     }
-}.
+}
