@@ -1,3 +1,6 @@
+/*
+
+
 :root {
   --color-black: rgba(23, 19, 19, 0.627);
   --color-green: rgb(6, 158, 6);
@@ -176,7 +179,7 @@ button {
 .footer a:hover {
   text-decoration: underline;
 }
-
+*/
 
 
 @media screen and (max-width: 1200px) {

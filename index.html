@@ -5,53 +5,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piano Lesson</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
-  <header id="header">
+  <header id="heaDer">
       <img
         src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2017/png/iconmonstr-headphones-16.png&r=52&g=130&b=55"
-        alt="headphone" id="header-img">
-      <span class="nav-title"><a class="nav-txt" href="https://happylife24.github.io/Piano-Lesson-website/">Piano LessoN</a></span>
-      <a href="javascript:void(0);" class="btn" onclick="toggleList()">Menu</a>
+        alt="headphone" id="headerImage">
+      <span id="navTitle"><a id="navTxt" href="https://happylife24.github.io/Piano-Lesson-website/">Piano LessoN</a></span>
+      <a href="javascript:void(0);" id="clickBtn" onclick="toggleList()">Menu</a>
       <span id="myList">
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#how_we_teach">How we teach</a>
-        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="navLink" href="#features">Features</a>
+        <a class="navLink" href="#how_we_teach">How we teach</a>
+        <a class="navLink" href="#pricing">Pricing</a>
       </span>
   </header>
 
   <section class="form">
     <form id="form" action="https://happylife24.github.io/Piano-Lesson-website/">
-      <div class="subs">
+      <div class="suBs">
         <div>Subcribe us for free piano sheets and news.</div>
-        <input name="email" id="email" type="email"
+        <input name="email" id="eMail" type="email"
           placeholder="Enter your email address" />
-        <input name="submit" id="submit" type="submit">
+        <input name="submit" id="subMit" type="submit">
       </div>
     </form>
   </section>
 
-  <section class="grid-container">
+  <section class="gridContainer">
     <div id="features"><img
         src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2019/png/iconmonstr-school-29.png&r=0&g=0&b=0"
-        id="img"></div>
+        class="picTure"></div>
     <div id="text">
       <h2>Professional Teachers</h2>
       <p>Our teachers'education background and work experiences are very professional.</p>
     </div>
     <div id="features"><img
         src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2019/png/iconmonstr-school-25.png&r=0&g=0&b=0"
-        id="img"></div>
+        class="picTure"></div>
     <div id="text">
       <h2>Easy to use</h2>
       <p>Our virtual piano lesson's platform is easy to learn faster and improve piano skill proficiently.</p>
     </div>
     <div id="features"><img
         src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2013/png/iconmonstr-banknote-16.png&r=0&g=0&b=0"
-        id="img"></div>
+        class="picTure"></div>
     <div id="text">
       <h2>Affordable tuition</h2>
       <p>We offer affordable tuition fee for better education.</p>
@@ -59,25 +57,25 @@
   </section>
 
   <section id="how_we_teach">
-    <iframe id="video" src="https://www.youtube.com/embed/powKEGuPvjc" title="YouTube video player"></iframe>
+    <iframe id="viDeo" src="https://www.youtube.com/embed/powKEGuPvjc" title="YouTube video player"></iframe>
   </section>
 
-  <section class="flex-container">
-    <div id="pricing">
+  <section class="flexContainer">
+    <div id="priCing">
       <p>FOR INDIVIDUALS</p>
       <h2>Free</h2>
       <p>$100</p>
       <button>select</button>
     </div>
 
-    <div id="pricing">
+    <div id="priCing">
       <p>FOR INDIVIDUALS</p>
       <h2>Premium</h2>
       <p>$200</p>
       <button>select</button>
     </div>
 
-    <div id="pricing">
+    <div id="priCing">
       <p>FOR TEAMS</p>
       <h2>Business</h2>
       <p>$400</p>
@@ -89,5 +87,6 @@
     <p>© 2023 Piano LessoN - <a href="https://github.com/happylife24">happylife24</a></p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
