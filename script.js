@@ -1,5 +1,3 @@
-
-
 function styleBackground() {
     document.body.style.background = "rgba(245, 227, 227, 0.903)";
     document.body.style.fontFamily = "Montserrat, sans-serif";
@@ -38,7 +36,7 @@ navTitle();
 
 function navTxt() {
     var navTxt = document.getElementById("navTxt");
-    navTxt.style.color = "green";
+    navTxt.style.color = "rgb(6, 158, 6)";
     navTxt.style.textDecoration = "none";
 }
 navTxt();
@@ -47,7 +45,7 @@ navTxt();
 function navLink() {
     var navLink = document.querySelectorAll(".navLink");
     navLink.forEach(function(navLink) {
-    navLink.style.color = "green";
+    navLink.style.color = "rgb(6, 158, 6)";
     navLink.style.fontSize = "x-large";
     navLink.style.marginRight = "40px";
     navLink.style.paddingLeft = "160px";
@@ -68,7 +66,7 @@ styleInput();
 
 function eMail() {
     var eMail = document.getElementById("eMail");
-    eMail.style.border = "1px solid white";
+    eMail.style.border = "1px solid rgba(255, 255, 255, 0.965)";
     eMail.style.borderRadius = "40px";
     eMail.style.height = "30px";
     eMail.style.width = "400px";
@@ -79,7 +77,7 @@ eMail();
 function suBs() {
     var suBs = document.querySelectorAll(".suBs");
     suBs.forEach(function(suBs) {
-    suBs.style.color = "black";
+    suBs.style.color = "rgba(23, 19, 19, 0.627)";
     suBs.style.fontSize = "large";
     suBs.style.paddingTop = "150px";
     suBs.style.textAlign = "center";
@@ -90,10 +88,10 @@ suBs();
 
 function subMit() {
     var subMit = document.getElementById("subMit");
-    subMit.style.backgroundColor = "green";
-    subMit.style.border = "1px solid green";
+    subMit.style.backgroundColor = "rgb(6, 158, 6)";
+    subMit.style.border = "1px solid rgb(6, 158, 6)";
     subMit.style.borderRadius = "5px";
-    subMit.style.color = "gray";
+    subMit.style.color = "rgba(245, 227, 227, 0.903)";
     subMit.style.cursor = "pointer";
 }
 subMit();
@@ -104,6 +102,15 @@ function clickBtn() {
     clickBtn.style.display = "none";
 }
 clickBtn();
+
+function toggleList() {
+    var x = document.getElementById("myList");
+    if (x.style.display === "block" || x.style.display === "") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
 
 
 function gridContainer() {
@@ -130,7 +137,7 @@ picTure();
 
 var styleText = document.querySelectorAll("#text h2");
 styleText.forEach(function(styleText) {
-    styleText.style.color = "black";
+    styleText.style.color = "rgba(23, 19, 19, 0.627)k";
     styleText.style.fontSize = "20px";
     styleText.style.marginTop = "80px";
     styleText.style.marginBottom = "0px";
@@ -158,8 +165,8 @@ viDeo();
 function applyFlexContainer() {
     var flexContainers = document.querySelectorAll(".flexContainer");
     flexContainers.forEach(function(container) {
-        container.style.color = "var(--color-black)";
-        container.style.backgroundColor = "var(--color-lightgray)";
+        container.style.color = "rgba(23, 19, 19, 0.627)";
+        container.style.backgroundColor = "rgba(245, 227, 227, 0.903)";
         container.style.display = "flex";
         container.style.flexWrap = "nowrap";
         container.style.paddingTop = "150px";
@@ -168,7 +175,6 @@ function applyFlexContainer() {
     });
 }
 applyFlexContainer();
-
 
 
 var styleFlexH2 = document.querySelectorAll(".flexContainer h2");
@@ -186,8 +192,8 @@ restyleFlexP.forEach(function(restyleFlexP) {
 function priCing() {
     var priCings = document.querySelectorAll("#priCing");
     priCings.forEach(function(priCing) {
-        priCing.style.backgroundColor = "white";
-        priCing.style.border = "3px solid white";
+        priCing.style.backgroundColor = "rgba(255, 255, 255, 0.965)";
+        priCing.style.border = "3px solid rgba(255, 255, 255, 0.965)";
         priCing.style.borderRadius = "7px";
         priCing.style.height = "90%";
         priCing.style.marginLeft = "60px";
@@ -205,10 +211,10 @@ priCing();
 function styleButton() {
 var button = document.querySelectorAll("button");
 button.forEach(function(button) {
-    button.style.backgroundColor = "green";
-    button.style.border = "1px solid green";
+    button.style.backgroundColor = "rgb(6, 158, 6)";
+    button.style.border = "1px solid rgb(6, 158, 6)";
     button.style.borderRadius = "5px";
-    button.style.color = "gray";
+    button.style.color = "rgba(245, 227, 227, 0.903)";
     button.style.cursor = "pointer";
     button.style.fontSize = "20px";
     button.style.height = "35px";
@@ -222,7 +228,7 @@ styleButton();
 
 var styleFooterP = document.querySelectorAll(".footer p");
 styleFooterP.forEach(function(styleFooterP) {
-    styleFooterP.style.color = "black";
+    styleFooterP.style.color = "rgba(23, 19, 19, 0.627)";
     styleFooterP.style.fontSize = "18px";
     styleFooterP.style.marginBottom = "40px";
     styleFooterP.style.textAlign = "center";
@@ -240,16 +246,3 @@ restyleFooterA.forEach(function(restyleFooterA) {
 
 
 
-
-
-
-/*
-function toggleList() {
-    var x = document.getElementById("myList");
-    if (x.style.display === "block" || x.style.display === "") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-*/
