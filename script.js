@@ -246,3 +246,126 @@ restyleFooterA.forEach(function(restyleFooterA) {
 
 
 
+/* media query for mobile*/
+function checkMediaQuery() {
+    var mediaQuery = window.innerWidth;
+    if (mediaQuery <= 400) {
+        var heaDer = document.getElementById("heaDer");
+        heaDer.style.display = "flex";
+        heaDer.style.maxWidth = "100%";
+        heaDer.style.height = "auto";
+
+        var headerImage = document.getElementById("headerImage");
+        headerImage.style.width = "10vw";
+        headerImage.style.height = "10vw";
+        headerImage.style.marginTop = "15px";
+        headerImage.style.paddingLeft = "8px";
+        headerImage.style.marginBottom = "-20px";
+
+        var fontSize = document.querySelectorAll("#navTitle, .navLink, .suBs, input, #text h2, #text p, button");
+        fontSize.forEach(function(fontSize){
+            fontSize.style.fontSize = "5.5vw";
+        });
+
+        var clickBtn = document.getElementById("clickBtn");
+        clickBtn.style.color = "rgba(23, 19, 19, 0.627)";
+        clickBtn.style.display = "block";
+        clickBtn.style.fontSize = "9vw";
+        clickBtn.style.width = "0px";
+        clickBtn.style.height = "0px";
+        clickBtn.style.marginTop = "35px";
+        clickBtn.style.marginRight = "100px";
+        clickBtn.style.textDecoration = "none";
+/* */
+        var myList = document.getElementById("myList");
+        myList.style.display = "none";
+        myList.style.marginTop = "100px";
+        myList.style.marginBottom = "500px";
+        
+
+
+        var navTitle = document.getElementById("navTitle");
+        navTitle.style.flexGrow = "1";
+        navTitle.style.paddingTop = "50px";
+        navTitle.style.marginLeft = "-35px";
+
+        var navTxt = document.getElementById("navTxt");
+        navTxt.style.color = "rgba(23, 19, 19, 0.627)";
+        navTxt.style.fontSize = "4vw";
+/* */
+        var navLink = document.querySelectorAll(".navLink");
+        navLink.forEach(function(navLink) {
+        navLink.style.color = "rgba(23, 19, 19, 0.627)";
+        navLink.style.fontSize = "7vw";
+        navLink.style.marginLeft = "-159px";
+        navLink.style.paddingTop = "40px";
+        navLink.style.width = "100px";
+        navLink.style.height = "auto";
+        });
+
+        var eMail = document.getElementById("eMail");
+        eMail.style.width = "240px";
+
+        var suBs = document.querySelectorAll(".suBs");
+        suBs.forEach(function(suBs) {
+        suBs.style.marginLeft = "0px";
+        suBs.style.marginBottom = "180px";
+        suBs.style.marginBottom = "350px";
+        });
+        /* */
+        var gridContainer = document.querySelectorAll(".gridContainer");
+        gridContainer.forEach(function(gridContainer) {
+        gridContainer.style.display = "grid";
+        gridContainer.style.gridTemplateColumns = "90px auto";
+        gridContainer.style.marginTop = "-50px";
+        });
+
+        var picTure = document.querySelectorAll(".picTure");
+        picTure.forEach(function(picTure) {
+        picTure.style.paddingLeft = "20px";
+        picTure.style.paddingRight = "25px";
+        picTure.style.paddingTop = "80px";
+        picTure.style.width = "40px";   
+        });
+
+        var viDeo = document.getElementById("viDeo");
+        viDeo.style.border = "none";
+        viDeo.style.height = "auto";
+        viDeo.style.marginTop = "150px";
+        viDeo.style.marginBottom = "80px";
+        viDeo.style.marginLeft = "50px";
+        viDeo.style.width = "70%"; 
+        /* */
+        var flexContainers = document.querySelectorAll(".flexContainer");
+        flexContainers.forEach(function(container) {
+        container.style.display = "grid";
+        container.style.marginLeft = "-70px";
+        container.style.paddingTop = "200px";
+        container.style.paddingBottom = "200px";
+        container.style.paddingLeft = "60px";
+        });
+
+        var priCings = document.querySelectorAll("#priCing");
+        priCings.forEach(function(priCing) {
+        priCing.style.borderRadius = "7px";
+        priCing.style.height = "90%";
+        priCing.style.paddingTop = "10px";
+        priCing.style.paddingBottom = "60px";
+        priCing.style.width = "20%";
+        });
+
+        var styleFlex = document.querySelectorAll(".flexContainer h2, .flexContainer p");
+        styleFlex.forEach(function(styleFlexH2) {
+        styleFlex.style.fontSize = "5.8vw";
+        });
+        
+        var styleFooter = document.querySelectorAll(".footer p, .footer a");
+        styleFooter.forEach(function(styleFooter) {
+        styleFooter.style.fontSize = "5vw";
+        styleFooter.style.marginBottom = "50px";
+        });        
+    }
+}
+window.onload = checkMediaQuery;
+window.onresize = checkMediaQuery;
+
