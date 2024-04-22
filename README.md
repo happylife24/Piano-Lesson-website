@@ -8,7 +8,7 @@ This is a responsive website for mobile and desktop.
 Languages and tools:
 <br>
    <ul>
-     <li>HTML</li>
      <li>JavaScript</li>
      <li>used JavaScript Media Queries</li>
+     <li>HTML</li>
   </ul>
