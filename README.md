@@ -10,5 +10,5 @@ Languages and tools:
    <ul>
      <li>HTML</li>
      <li>JavaScript</li>
-     <li>used CSS Media Queries</li>
+     <li>used JavaScript Media Queries</li>
   </ul>
