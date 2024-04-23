@@ -342,7 +342,7 @@ function checkMediaQuery() {
         container.style.display = "grid";
         container.style.gridTemplateRows = "1fr 1fr 1fr";
         container.style.gap = "50px";
-        container.style.paddingTop = "10px";
+        container.style.paddingTop = "170px";
         });
 
         var priCings = document.querySelectorAll("#priCing");
