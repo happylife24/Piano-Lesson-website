@@ -104,11 +104,11 @@ function clickBtn() {
 clickBtn();
 
 function toggleList() {
-    var x = document.getElementById("myList");
-    if (x.style.display === "block" || x.style.display === "") {
-        x.style.display = "none";
+    var myList = document.getElementById("myList");
+    if (myList.style.display === "block" || myList.style.display === "") {
+        myList.style.display = "none";
     } else {
-        x.style.display = "block";
+        myList.style.display = "block";
     }
 }
 
@@ -308,16 +308,17 @@ function checkMediaQuery() {
 
         var suBs = document.querySelectorAll(".suBs");
         suBs.forEach(function(suBs) {
+        suBs.style.marginTop = "150px";
         suBs.style.marginLeft = "0px";
         suBs.style.marginBottom = "180px";
         suBs.style.marginBottom = "350px";
         });
-        /* */
+       
         var gridContainer = document.querySelectorAll(".gridContainer");
         gridContainer.forEach(function(gridContainer) {
         gridContainer.style.display = "grid";
         gridContainer.style.gridTemplateColumns = "90px auto";
-        gridContainer.style.marginTop = "-50px";
+        gridContainer.style.marginTop = "-230px";
         });
 
         var picTure = document.querySelectorAll(".picTure");
@@ -335,34 +336,34 @@ function checkMediaQuery() {
         viDeo.style.marginBottom = "80px";
         viDeo.style.marginLeft = "50px";
         viDeo.style.width = "70%"; 
-        /* */
+
         var flexContainers = document.querySelectorAll(".flexContainer");
         flexContainers.forEach(function(container) {
         container.style.display = "grid";
-        container.style.marginLeft = "-70px";
-        container.style.paddingTop = "200px";
-        container.style.paddingBottom = "200px";
-        container.style.paddingLeft = "60px";
+        container.style.gridTemplateRows = "1fr 1fr 1fr";
+        container.style.gap = "50px";
+        container.style.paddingTop = "10px";
         });
 
         var priCings = document.querySelectorAll("#priCing");
         priCings.forEach(function(priCing) {
         priCing.style.borderRadius = "7px";
-        priCing.style.height = "90%";
-        priCing.style.paddingTop = "10px";
-        priCing.style.paddingBottom = "60px";
-        priCing.style.width = "20%";
+        priCing.style.height = "100px"; 
+        priCing.style.marginLeft = "-1px";
+        priCing.style.paddingTop = "20px";
+        priCing.style.paddingRight = "100px";
+        priCing.style.paddingBottom = "120px";
         });
 
         var styleFlex = document.querySelectorAll(".flexContainer h2, .flexContainer p");
         styleFlex.forEach(function(styleFlexH2) {
         styleFlex.style.fontSize = "5.8vw";
         });
-        
-        var styleFooter = document.querySelectorAll(".footer p, .footer a");
-        styleFooter.forEach(function(styleFooter) {
-        styleFooter.style.fontSize = "5vw";
-        styleFooter.style.marginBottom = "50px";
+/* */
+        var styleFooters = document.querySelectorAll(".footer p, .footer a");
+        styleFooters.forEach(function(styleFooter) {
+        styleFooter.style.fontSize = "0.1vw";
+        styleFooter.style.marginBottom = "400px";
         });        
     }
 }
