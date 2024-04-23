@@ -369,4 +369,5 @@ function checkMediaQuery() {
 }
 window.onload = checkMediaQuery;
 window.onresize = checkMediaQuery;
+.
 
