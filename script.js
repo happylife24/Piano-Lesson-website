@@ -58,7 +58,7 @@ navLink();
 function styleInput() {
     var input = document.querySelectorAll("input");
     input.forEach(function(input) {
-        input.style.marginTop = "20px";
+    input.style.marginTop = "20px";
     });
 }
 styleInput();
@@ -126,10 +126,10 @@ gridContainer();
 function picTure() {
     var picTure = document.querySelectorAll(".picTure");
     picTure.forEach(function(picTure) {
-        picTure.style.paddingLeft = "260px";
-        picTure.style.paddingRight = "25px";
-        picTure.style.paddingTop = "80px";
-        picTure.style.width = "40px";
+    picTure.style.paddingLeft = "260px";
+    picTure.style.paddingRight = "25px";
+    picTure.style.paddingTop = "80px";
+    picTure.style.width = "40px";
     });
 }
 picTure();
@@ -165,13 +165,13 @@ viDeo();
 function applyFlexContainer() {
     var flexContainers = document.querySelectorAll(".flexContainer");
     flexContainers.forEach(function(container) {
-        container.style.color = "rgba(23, 19, 19, 0.627)";
-        container.style.backgroundColor = "rgba(245, 227, 227, 0.903)";
-        container.style.display = "flex";
-        container.style.flexWrap = "nowrap";
-        container.style.paddingTop = "150px";
-        container.style.paddingBottom = "150px";
-        container.style.paddingLeft = "60px";
+    container.style.color = "rgba(23, 19, 19, 0.627)";
+    container.style.backgroundColor = "rgba(245, 227, 227, 0.903)";
+    container.style.display = "flex";
+    container.style.flexWrap = "nowrap";
+    container.style.paddingTop = "150px";
+    container.style.paddingBottom = "150px";
+    container.style.paddingLeft = "60px";
     });
 }
 applyFlexContainer();
@@ -192,17 +192,17 @@ restyleFlexP.forEach(function(restyleFlexP) {
 function priCing() {
     var priCings = document.querySelectorAll("#priCing");
     priCings.forEach(function(priCing) {
-        priCing.style.backgroundColor = "rgba(255, 255, 255, 0.965)";
-        priCing.style.border = "3px solid rgba(255, 255, 255, 0.965)";
-        priCing.style.borderRadius = "7px";
-        priCing.style.height = "90%";
-        priCing.style.marginLeft = "60px";
-        priCing.style.marginRight = "15px";
-        priCing.style.paddingTop = "10px";
-        priCing.style.paddingBottom = "20px";
-        priCing.style.paddingLeft = "25px";
-        priCing.style.paddingRight = "10px";
-        priCing.style.width = "20%";
+    priCing.style.backgroundColor = "rgba(255, 255, 255, 0.965)";
+    priCing.style.border = "3px solid rgba(255, 255, 255, 0.965)";
+    priCing.style.borderRadius = "7px";
+    priCing.style.height = "90%";
+    priCing.style.marginLeft = "60px";
+    priCing.style.marginRight = "15px";
+    priCing.style.paddingTop = "10px";
+    priCing.style.paddingBottom = "20px";
+    priCing.style.paddingLeft = "25px";
+    priCing.style.paddingRight = "10px";
+    priCing.style.width = "20%";
     });
 }
 priCing();
