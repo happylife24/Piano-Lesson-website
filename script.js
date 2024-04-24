@@ -111,7 +111,6 @@ function toggleList() {
         myList.style.display = "block";
     }
 }
-toggleList();
 
 
 function gridContainer() {
@@ -279,12 +278,12 @@ function checkMediaQuery() {
         clickBtn.style.textDecoration = "none";
 /* */
         var myList = document.getElementById("myList");
+        myList.style.background = "rgba(245, 227, 227, 0.903)";
         myList.style.display = "none";
-        myList.style.marginTop = "100px";
-        myList.style.marginBottom = "500px";
+        myList.style.position = "absolute";
+        myList.style.top = "68px";
+        myList.style.marginBottom = "200px";
         
-
-
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
         navTitle.style.paddingTop = "50px";
@@ -298,10 +297,11 @@ function checkMediaQuery() {
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(23, 19, 19, 0.627)";
         navLink.style.fontSize = "7vw";
-        navLink.style.marginLeft = "-159px";
-        navLink.style.paddingTop = "40px";
-        navLink.style.width = "100px";
+        navLink.style.marginLeft = "1px";
+        navLink.style.paddingTop = "30px";
+        navLink.style.width = "120px";
         navLink.style.height = "auto";
+        navLink.style.display = "grid";
         });
 
         var eMail = document.getElementById("eMail");
