@@ -111,6 +111,7 @@ function toggleList() {
         myList.style.display = "block";
     }
 }
+toggleList();
 
 
 function gridContainer() {
