@@ -5,7 +5,7 @@ Link: https://happylife24.github.io/Piano-Lesson-website/
 This is a responsive website for mobile and desktop.
 <br>
 <br>
-Languages and tools:
+Languages:
 <br>
    <ul>
      <li>JavaScript</li>
