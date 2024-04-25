@@ -1,4 +1,4 @@
-# PIANO LESSON ( PRODUCT LANDING PAGE )
+# Piano Lesson Website
 Link: https://happylife24.github.io/Piano-Lesson-website/
 <br>
 <br>
