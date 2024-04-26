@@ -226,23 +226,23 @@ button.forEach(function(button) {
 styleButton();
 
 
-var styleFooterP = document.querySelectorAll(".footer p");
-styleFooterP.forEach(function(styleFooterP) {
-    styleFooterP.style.color = "rgba(23, 19, 19, 0.627)";
-    styleFooterP.style.fontSize = "18px";
-    styleFooterP.style.marginBottom = "40px";
-    styleFooterP.style.textAlign = "center";
-    styleFooterP.style.textDecoration = "none";
+var styleFooters = document.querySelectorAll(".fooTer p, .fooTer a");
+styleFooters.forEach(function(footer) {
+    footer.style.fontSize = "18px";
+    footer.style.marginBottom = "30px";
+    footer.style.textAlign = "center";
+    footer.style.textDecoration = "none";
 });
 
-var restyleFooterA = document.querySelectorAll(".footer a");
-restyleFooterA.forEach(function(restyleFooterA) {
-    restyleFooterA.style.color = "gray";
-    restyleFooterA.style.fontSize = "18px";
-    restyleFooterA.style.marginBottom = "40px";
-    restyleFooterA.style.textAlign = "center";
-    restyleFooterA.style.textDecoration = "none";
-});
+var restyleFooterP = document.querySelectorAll(".fooTer p");
+restyleFooterP.forEach(function(footerp) {
+    footerp.style.color = "rgba(23, 19, 19, 0.627)";
+}); 
+
+var reStyleFooterA = document.querySelectorAll(".fooTer a");
+reStyleFooterA.forEach(function(footera) {
+    footera.style.color = "gray";
+}); 
 
 
 
@@ -276,7 +276,7 @@ function checkMediaQuery() {
         clickBtn.style.marginTop = "35px";
         clickBtn.style.marginRight = "100px";
         clickBtn.style.textDecoration = "none";
-/* */
+
         var myList = document.getElementById("myList");
         myList.style.background = "rgba(245, 227, 227, 0.903)";
         myList.style.display = "none";
@@ -292,7 +292,7 @@ function checkMediaQuery() {
         var navTxt = document.getElementById("navTxt");
         navTxt.style.color = "rgba(23, 19, 19, 0.627)";
         navTxt.style.fontSize = "4vw";
-/* */
+
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(23, 19, 19, 0.627)";
@@ -356,16 +356,15 @@ function checkMediaQuery() {
         priCing.style.paddingBottom = "120px";
         });
 
-        var styleFlex = document.querySelectorAll(".flexContainer h2, .flexContainer p");
-        styleFlex.forEach(function(styleFlexH2) {
-        styleFlex.style.fontSize = "5.8vw";
+        var styleFlexs = document.querySelectorAll(".flexContainer h2, .flexContainer p");
+        styleFlexs.forEach(function(styleFlex) {
+        styleFlex.style.fontSize = "6.5vw";
+        });  
+        
+        var styleFooters = document.querySelectorAll(".fooTer p, .fooTer a");
+        styleFooters.forEach(function(footer) {
+        footer.style.fontSize = "5.5vw";
         });
-/* */
-        var styleFooters = document.querySelectorAll(".footer p, .footer a");
-        styleFooters.forEach(function(styleFooter) {
-        styleFooter.style.fontSize = "0.1vw";
-        styleFooter.style.marginBottom = "400px";
-        });        
     }
 }
 window.onload = checkMediaQuery;
