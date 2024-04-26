@@ -358,12 +358,12 @@ function checkMediaQuery() {
 
         var styleFlexs = document.querySelectorAll(".flexContainer h2, .flexContainer p");
         styleFlexs.forEach(function(styleFlex) {
-        styleFlex.style.fontSize = "6.5vw";
+        styleFlex.style.fontSize = "5.2vw";
         });  
         
         var styleFooters = document.querySelectorAll(".fooTer p, .fooTer a");
         styleFooters.forEach(function(footer) {
-        footer.style.fontSize = "5.5vw";
+        footer.style.fontSize = "4.8vw";
         });
     }
 }
