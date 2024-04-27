@@ -103,14 +103,18 @@ function clickBtn() {
 }
 clickBtn();
 
+
 function toggleList() {
     var myList = document.getElementById("myList");
     if (myList.style.display === "block" || myList.style.display === "") {
         myList.style.display = "none";
     } else {
         myList.style.display = "block";
-    }
+    } 
 }
+document.getElementById("myList").addEventListener("click", function() {
+    this.style.display = "none";
+});
 
 
 function gridContainer() {
@@ -256,11 +260,19 @@ function checkMediaQuery() {
         heaDer.style.height = "auto";
 
         var headerImage = document.getElementById("headerImage");
-        headerImage.style.width = "10vw";
-        headerImage.style.height = "10vw";
-        headerImage.style.marginTop = "15px";
+        headerImage.style.width = "7vw";
+        headerImage.style.height = "7vw";
+        headerImage.style.marginTop = "17px";
         headerImage.style.paddingLeft = "8px";
-        headerImage.style.marginBottom = "-20px";
+        headerImage.style.marginBottom = "-50px";
+        
+        /*
+        var headerImage = document.getElementById("headerImage");
+        headerImage.addEventListener("click", function() {
+            var url = "https://happylife24.github.io/Piano-Lesson-website/";
+            window.open();
+        });
+        */
 
         var fontSize = document.querySelectorAll("#navTitle, .navLink, .suBs, input, #text h2, #text p, button");
         fontSize.forEach(function(fontSize){
@@ -269,12 +281,13 @@ function checkMediaQuery() {
 
         var clickBtn = document.getElementById("clickBtn");
         clickBtn.style.color = "rgba(23, 19, 19, 0.627)";
+        clickBtn.style.position = "relative";
         clickBtn.style.display = "block";
-        clickBtn.style.fontSize = "9vw";
+        clickBtn.style.fontSize = "20vw";
         clickBtn.style.width = "0px";
         clickBtn.style.height = "0px";
-        clickBtn.style.marginTop = "35px";
-        clickBtn.style.marginRight = "100px";
+        clickBtn.style.marginTop = "-10px";
+        clickBtn.style.marginRight = "63px";
         clickBtn.style.textDecoration = "none";
 
         var myList = document.getElementById("myList");
@@ -283,15 +296,15 @@ function checkMediaQuery() {
         myList.style.position = "absolute";
         myList.style.top = "68px";
         myList.style.marginBottom = "200px";
-        
+
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
-        navTitle.style.paddingTop = "50px";
-        navTitle.style.marginLeft = "-35px";
+        navTitle.style.paddingTop = "40px";
+        navTitle.style.paddingBottom = "10px";
+        navTitle.style.marginLeft = "-25px";
 
         var navTxt = document.getElementById("navTxt");
-        navTxt.style.color = "rgba(23, 19, 19, 0.627)";
-        navTxt.style.fontSize = "4vw";
+        navTxt.style.visibility = "hidden";
 
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
@@ -299,8 +312,6 @@ function checkMediaQuery() {
         navLink.style.fontSize = "7vw";
         navLink.style.marginLeft = "1px";
         navLink.style.paddingTop = "30px";
-        navLink.style.width = "120px";
-        navLink.style.height = "auto";
         navLink.style.display = "grid";
         });
 
