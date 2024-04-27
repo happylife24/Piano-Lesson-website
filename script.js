@@ -112,9 +112,6 @@ function toggleList() {
         myList.style.display = "block";
     } 
 }
-document.getElementById("myList").addEventListener("click", function() {
-    this.style.display = "none";
-});
 
 
 function gridContainer() {
@@ -290,6 +287,12 @@ function checkMediaQuery() {
         clickBtn.style.marginRight = "63px";
         clickBtn.style.textDecoration = "none";
 
+        
+        document.getElementById("myList").addEventListener("click", function() {
+            this.style.display = "none";
+        });
+        
+        
         var myList = document.getElementById("myList");
         myList.style.background = "rgba(245, 227, 227, 0.903)";
         myList.style.display = "none";
