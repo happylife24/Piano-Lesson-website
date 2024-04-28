@@ -1,5 +1,5 @@
 function styleBackground() {
-    document.body.style.background = "rgba(245, 227, 227, 0.903)";
+    document.body.style.background = "rgba(245, 227, 227, 0.903)"; // light-gray
     document.body.style.fontFamily = "Montserrat, sans-serif";
 }
 styleBackground();
@@ -7,7 +7,7 @@ styleBackground();
 
 function heaDer() {
     var heaDer = document.getElementById("heaDer");
-    heaDer.style.background = "rgba(245, 227, 227, 0.903)";
+    heaDer.style.background = "rgba(245, 227, 227, 0.903)";  // light-gray
     heaDer.style.border = "1px none";
     heaDer.style.borderWidth = "thin";
     heaDer.style.marginLeft = "0";
@@ -66,7 +66,7 @@ styleInput();
 
 function eMail() {
     var eMail = document.getElementById("eMail");
-    eMail.style.border = "1px solid rgba(255, 255, 255, 0.965)";
+    eMail.style.border = "1px solid rgba(255, 255, 255, 0.965)"; // white
     eMail.style.borderRadius = "40px";
     eMail.style.height = "30px";
     eMail.style.width = "400px";
@@ -77,7 +77,7 @@ eMail();
 function suBs() {
     var suBs = document.querySelectorAll(".suBs");
     suBs.forEach(function(suBs) {
-    suBs.style.color = "rgba(23, 19, 19, 0.627)";
+    suBs.style.color = "rgba(23, 19, 19, 0.627)"; // black
     suBs.style.fontSize = "large";
     suBs.style.paddingTop = "150px";
     suBs.style.textAlign = "center";
@@ -91,7 +91,7 @@ function subMit() {
     subMit.style.backgroundColor = "rgb(6, 158, 6)";
     subMit.style.border = "1px solid rgb(6, 158, 6)";
     subMit.style.borderRadius = "5px";
-    subMit.style.color = "rgba(245, 227, 227, 0.903)";
+    subMit.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
     subMit.style.cursor = "pointer";
 }
 subMit();
@@ -138,7 +138,7 @@ picTure();
 
 var styleText = document.querySelectorAll("#text h2");
 styleText.forEach(function(styleText) {
-    styleText.style.color = "rgba(23, 19, 19, 0.627)k";
+    styleText.style.color = "rgba(23, 19, 19, 0.627)"; // black
     styleText.style.fontSize = "20px";
     styleText.style.marginTop = "80px";
     styleText.style.marginBottom = "0px";
@@ -166,8 +166,8 @@ viDeo();
 function applyFlexContainer() {
     var flexContainers = document.querySelectorAll(".flexContainer");
     flexContainers.forEach(function(container) {
-    container.style.color = "rgba(23, 19, 19, 0.627)";
-    container.style.backgroundColor = "rgba(245, 227, 227, 0.903)";
+    container.style.color = "rgba(23, 19, 19, 0.627)"; // black
+    container.style.backgroundColor = "rgba(245, 227, 227, 0.903)"; // light-gray
     container.style.display = "flex";
     container.style.flexWrap = "nowrap";
     container.style.paddingTop = "150px";
@@ -193,8 +193,8 @@ restyleFlexP.forEach(function(restyleFlexP) {
 function priCing() {
     var priCings = document.querySelectorAll("#priCing");
     priCings.forEach(function(priCing) {
-    priCing.style.backgroundColor = "rgba(255, 255, 255, 0.965)";
-    priCing.style.border = "3px solid rgba(255, 255, 255, 0.965)";
+    priCing.style.backgroundColor = "rgba(255, 255, 255, 0.965)";  // white
+    priCing.style.border = "3px solid rgba(255, 255, 255, 0.965)";  // white
     priCing.style.borderRadius = "7px";
     priCing.style.height = "90%";
     priCing.style.marginLeft = "60px";
@@ -215,7 +215,7 @@ button.forEach(function(button) {
     button.style.backgroundColor = "rgb(6, 158, 6)";
     button.style.border = "1px solid rgb(6, 158, 6)";
     button.style.borderRadius = "5px";
-    button.style.color = "rgba(245, 227, 227, 0.903)";
+    button.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
     button.style.cursor = "pointer";
     button.style.fontSize = "20px";
     button.style.height = "35px";
@@ -237,7 +237,7 @@ styleFooters.forEach(function(footer) {
 
 var restyleFooterP = document.querySelectorAll(".fooTer p");
 restyleFooterP.forEach(function(footerp) {
-    footerp.style.color = "rgba(23, 19, 19, 0.627)";
+    footerp.style.color = "rgba(23, 19, 19, 0.627)";  // black
 }); 
 
 var reStyleFooterA = document.querySelectorAll(".fooTer a");
@@ -277,14 +277,15 @@ function checkMediaQuery() {
         });
 
         var clickBtn = document.getElementById("clickBtn");
-        clickBtn.style.color = "rgba(23, 19, 19, 0.627)";
-        clickBtn.style.position = "relative";
+        clickBtn.style.color = "rgba(255, 255, 255, 0.965)";  // white
+        clickBtn.style.backgroundColor = "rgb(6, 158, 6)";  // green
         clickBtn.style.display = "block";
         clickBtn.style.fontSize = "20vw";
         clickBtn.style.width = "0px";
         clickBtn.style.height = "0px";
         clickBtn.style.marginTop = "-10px";
-        clickBtn.style.marginRight = "63px";
+        clickBtn.style.marginRight = "-10px";
+        clickBtn.style.padding = "0px 80px 85px";
         clickBtn.style.textDecoration = "none";
 
         
@@ -294,11 +295,11 @@ function checkMediaQuery() {
         
         
         var myList = document.getElementById("myList");
-        myList.style.background = "rgba(245, 227, 227, 0.903)";
+        myList.style.background = "rgba(245, 227, 227, 0.903)";  // light-gray
         myList.style.display = "none";
         myList.style.position = "absolute";
         myList.style.top = "68px";
-        myList.style.marginBottom = "200px";
+        myList.style.marginBottom = "0px";
 
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
@@ -307,14 +308,20 @@ function checkMediaQuery() {
         navTitle.style.marginLeft = "-25px";
 
         var navTxt = document.getElementById("navTxt");
-        navTxt.style.visibility = "hidden";
-
+        navTxt.style.fontSize = "3vw";
+        navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black
+        
+/* */
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
-        navLink.style.color = "rgba(23, 19, 19, 0.627)";
+        navLink.style.color = "rgba(255, 255, 255, 0.965)"; // white
+        navLink.style.backgroundColor = "rgb(6, 158, 6)"; // green
+        navLink.style.overFlow = "auto";
         navLink.style.fontSize = "7vw";
-        navLink.style.marginLeft = "1px";
-        navLink.style.paddingTop = "30px";
+        navLink.style.marginLeft = "-8px";
+        navLink.style.paddingRight = "100px";
+        navLink.style.paddingTop = "20px";
+        navLink.style.paddingBottom = "20px";
         navLink.style.display = "grid";
         });
 
