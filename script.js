@@ -21,10 +21,9 @@ heaDer();
 
 function headerImage() {
     var headerImage = document.getElementById("headerImage");
-    headerImage.style.width = "50px";
+    headerImage.style.width = "40px";
 }
 headerImage();
-
 
 function navTitle() {
     var navTitle = document.getElementById("navTitle");
@@ -88,8 +87,8 @@ suBs();
 
 function subMit() {
     var subMit = document.getElementById("subMit");
-    subMit.style.backgroundColor = "rgb(6, 158, 6)"; //green 
-    subMit.style.border = "1px solid rgb(6, 158, 6)"; //green
+    subMit.style.backgroundColor = "rgb(6, 158, 6)"; // green 
+    subMit.style.border = "1px solid rgb(6, 158, 6)"; // green
     subMit.style.borderRadius = "5px";
     subMit.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
     subMit.style.cursor = "pointer";
@@ -212,8 +211,8 @@ priCing();
 function styleButton() {
 var button = document.querySelectorAll("button");
 button.forEach(function(button) {
-    button.style.backgroundColor = "rgb(6, 158, 6)"; //green
-    button.style.border = "1px solid rgb(6, 158, 6)"; //green
+    button.style.backgroundColor = "rgb(6, 158, 6)"; // green
+    button.style.border = "1px solid rgb(6, 158, 6)"; // green
     button.style.borderRadius = "5px";
     button.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
     button.style.cursor = "pointer";
@@ -246,11 +245,17 @@ reStyleFooterA.forEach(function(footera) {
 }); 
 
 
+/* 모든 버튼에 설정하기
+navLink.style.top = "0px";
+        navLink.style.left = "0px";
+        navLink.style.right = "0px";
+        navLink.style.width = "100%";
+*/
 
 /* media query for mobile*/
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
-    if (mediaQuery <= 400) {
+    if (mediaQuery <= 440) {
         var heaDer = document.getElementById("heaDer");
         heaDer.style.display = "flex";
         heaDer.style.maxWidth = "100%";
@@ -262,14 +267,9 @@ function checkMediaQuery() {
         headerImage.style.marginTop = "17px";
         headerImage.style.paddingLeft = "8px";
         headerImage.style.marginBottom = "-50px";
-        
-        /*
-        var headerImage = document.getElementById("headerImage");
-        headerImage.addEventListener("click", function() {
-            var url = "https://happylife24.github.io/Piano-Lesson-website/";
-            window.open();
-        });
-        */
+
+        var headerLink = document.getElementById("headerLink");
+        headerLink.style.marginTop = "-30px";
 
         var fontSize = document.querySelectorAll("#navTitle, .navLink, .suBs, input, #text h2, #text p, button");
         fontSize.forEach(function(fontSize){
@@ -285,14 +285,12 @@ function checkMediaQuery() {
         clickBtn.style.height = "0px";
         clickBtn.style.marginTop = "-10px";
         clickBtn.style.marginRight = "-10px";
-        clickBtn.style.padding = "0px 80px 85px";
+        clickBtn.style.padding = "0px 75px 85px 25px";
         clickBtn.style.textDecoration = "none";
 
-        
         document.getElementById("myList").addEventListener("click", function() {
             this.style.display = "none";
         });
-        
         
         var myList = document.getElementById("myList");
         myList.style.background = "rgba(245, 227, 227, 0.903)";  // light-gray
@@ -308,21 +306,24 @@ function checkMediaQuery() {
         navTitle.style.marginLeft = "-25px";
 
         var navTxt = document.getElementById("navTxt");
-        navTxt.style.fontSize = "3vw";
-        navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black
-        
+        navTxt.style.fontSize = "5vw";
+        navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black      
 /* */
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(255, 255, 255, 0.965)"; // white
         navLink.style.backgroundColor = "rgb(6, 158, 6)"; // green
-        navLink.style.overFlow = "auto";
+        navLink.style.overflow = "auto";
         navLink.style.fontSize = "7vw";
         navLink.style.marginLeft = "-8px";
         navLink.style.paddingRight = "100px";
         navLink.style.paddingTop = "20px";
         navLink.style.paddingBottom = "20px";
         navLink.style.display = "grid";
+        navLink.style.top = "0px";
+        navLink.style.left = "0px";
+        navLink.style.right = "0px";
+        navLink.style.width = "100%";
         });
 
         var eMail = document.getElementById("eMail");
@@ -341,6 +342,10 @@ function checkMediaQuery() {
         gridContainer.style.display = "grid";
         gridContainer.style.gridTemplateColumns = "90px auto";
         gridContainer.style.marginTop = "-230px";
+        gridContainer.style.top = "0px";
+        gridContainer.style.left = "0px";
+        gridContainer.style.right = "0px";
+        gridContainer.style.width = "100%";
         });
 
         var picTure = document.querySelectorAll(".picTure");
@@ -370,11 +375,14 @@ function checkMediaQuery() {
         var priCings = document.querySelectorAll("#priCing");
         priCings.forEach(function(priCing) {
         priCing.style.borderRadius = "7px";
-        priCing.style.height = "100px"; 
+        priCing.style.height = "auto"; 
         priCing.style.marginLeft = "-1px";
-        priCing.style.paddingTop = "20px";
-        priCing.style.paddingRight = "100px";
-        priCing.style.paddingBottom = "120px";
+        priCing.style.paddingTop = "10px";
+        priCing.style.paddingRight = "120px";
+        priCing.style.top = "0px";
+        priCing.style.left = "0px";
+        priCing.style.right = "0px";
+        priCing.style.maxWidth = "100%"; 
         });
 
         var styleFlexs = document.querySelectorAll(".flexContainer h2, .flexContainer p");
