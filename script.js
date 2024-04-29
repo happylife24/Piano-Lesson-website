@@ -36,7 +36,7 @@ navTitle();
 
 function navTxt() {
     var navTxt = document.getElementById("navTxt");
-    navTxt.style.color = "rgb(6, 158, 6)";
+    navTxt.style.color = "rgb(6, 158, 6)"; //green
     navTxt.style.textDecoration = "none";
 }
 navTxt();
@@ -45,7 +45,7 @@ navTxt();
 function navLink() {
     var navLink = document.querySelectorAll(".navLink");
     navLink.forEach(function(navLink) {
-    navLink.style.color = "rgb(6, 158, 6)";
+    navLink.style.color = "rgb(6, 158, 6)"; //green
     navLink.style.fontSize = "x-large";
     navLink.style.marginRight = "40px";
     navLink.style.paddingLeft = "160px";
@@ -88,8 +88,8 @@ suBs();
 
 function subMit() {
     var subMit = document.getElementById("subMit");
-    subMit.style.backgroundColor = "rgb(6, 158, 6)";
-    subMit.style.border = "1px solid rgb(6, 158, 6)";
+    subMit.style.backgroundColor = "rgb(6, 158, 6)"; //green 
+    subMit.style.border = "1px solid rgb(6, 158, 6)"; //green
     subMit.style.borderRadius = "5px";
     subMit.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
     subMit.style.cursor = "pointer";
@@ -212,8 +212,8 @@ priCing();
 function styleButton() {
 var button = document.querySelectorAll("button");
 button.forEach(function(button) {
-    button.style.backgroundColor = "rgb(6, 158, 6)";
-    button.style.border = "1px solid rgb(6, 158, 6)";
+    button.style.backgroundColor = "rgb(6, 158, 6)"; //green
+    button.style.border = "1px solid rgb(6, 158, 6)"; //green
     button.style.borderRadius = "5px";
     button.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
     button.style.cursor = "pointer";
