@@ -25,6 +25,7 @@ function headerImage() {
 }
 headerImage();
 
+
 function navTitle() {
     var navTitle = document.getElementById("navTitle");
     navTitle.style.fontSize = "xx-large";
@@ -243,7 +244,6 @@ var reStyleFooterA = document.querySelectorAll(".fooTer a");
 reStyleFooterA.forEach(function(footera) {
     footera.style.color = "gray";
 }); 
-
 
 
 
