@@ -245,8 +245,14 @@ reStyleFooterA.forEach(function(footera) {
 }); 
 
 
+
+
+/* navLink 드랍다운에 클릭할때마다 회색그림자 없애기
+*/
+
+
 /* 모든 버튼에 설정하기
-navLink.style.top = "0px";
+        navLink.style.top = "0px";
         navLink.style.left = "0px";
         navLink.style.right = "0px";
         navLink.style.width = "100%";
@@ -284,8 +290,8 @@ function checkMediaQuery() {
         clickBtn.style.width = "0px";
         clickBtn.style.height = "0px";
         clickBtn.style.marginTop = "-10px";
-        clickBtn.style.marginRight = "-10px";
-        clickBtn.style.padding = "0px 75px 85px 25px";
+        clickBtn.style.marginRight = "2px";
+        clickBtn.style.padding = "0 60px 80px 20px";
         clickBtn.style.textDecoration = "none";
 
         document.getElementById("myList").addEventListener("click", function() {
@@ -293,12 +299,13 @@ function checkMediaQuery() {
         });
         
         var myList = document.getElementById("myList");
-        myList.style.background = "rgba(245, 227, 227, 0.903)";  // light-gray
+        myList.style.background = "rgba(245, 227, 227, 0.903)"; // light-gray
         myList.style.display = "none";
         myList.style.position = "absolute";
         myList.style.top = "68px";
-        myList.style.marginBottom = "0px";
-
+        myList.style.paddingBottom = "100%";
+        myList.style.marginBottom = "100%";
+        
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
         navTitle.style.paddingTop = "40px";
@@ -312,19 +319,22 @@ function checkMediaQuery() {
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(255, 255, 255, 0.965)"; // white
-        navLink.style.backgroundColor = "rgb(6, 158, 6)"; // green
-        navLink.style.overflow = "auto";
         navLink.style.fontSize = "7vw";
-        navLink.style.marginLeft = "-8px";
-        navLink.style.paddingRight = "100px";
         navLink.style.paddingTop = "20px";
         navLink.style.paddingBottom = "20px";
         navLink.style.display = "grid";
-        navLink.style.top = "0px";
-        navLink.style.left = "0px";
-        navLink.style.right = "0px";
-        navLink.style.width = "100%";
+
+/* */
+        navLink.addEventListener("mouseover", function() {
+            navLink.style.color = "rgba(23, 19, 19, 0.627)"; // black
+            navLink.style.backgroundColor = "none";
         });
+
+        navLink.addEventListener("mouseout", function() {
+            navLink.style.color = rgb(6, 158, 6); // green
+            navLink.style.backgroundColor = "none";
+        });
+    });
 
         var eMail = document.getElementById("eMail");
         eMail.style.width = "240px";
