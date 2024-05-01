@@ -305,6 +305,7 @@ reStyleFooterA.forEach(function(footera) {
 
 
 
+
 /* media query for mobile*/
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
