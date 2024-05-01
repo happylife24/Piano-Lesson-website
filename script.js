@@ -1,31 +1,44 @@
 function styleBackground() {
-    document.body.style.background = "rgba(245, 227, 227, 0.903)"; // light-gray
+    document.body.style.background = "rgba(245, 227, 227, 0.903)"; // light-pink
     document.body.style.fontFamily = "Montserrat, sans-serif";
 }
 styleBackground();
 
-
+/* Remove line between image and header text.
+*/
 function heaDer() {
     var heaDer = document.getElementById("heaDer");
-    heaDer.style.background = "rgba(245, 227, 227, 0.903)";  // light-gray
+    heaDer.style.background = "rgba(245, 227, 227, 0.903)";  // light-pink
     heaDer.style.border = "1px none";
     heaDer.style.borderWidth = "thin";
     heaDer.style.marginLeft = "0";
     heaDer.style.marginRight = "0";
     heaDer.style.position = "fixed";
     heaDer.style.top = "0";
+    heaDer.style.left = "0";
+    heaDer.style.right = "0";
+    heaDer.style.maxWidth = "100%";
     heaDer.style.width = "150%";
 }
 heaDer();
 
-
+/* Remove line between image and header text.
+*/
 function headerImage() {
     var headerImage = document.getElementById("headerImage");
+    headerImage.style.textDecoration = "none";
+    headerImage.style.marginTop = "10px";
+    headerImage.style.marginLeft = "20px";
     headerImage.style.width = "40px";
+    headerImage.style.top = "0";
+    headerImage.style.left = "0";
+    headerImage.style.right = "0";
+    headerImage.style.maxWidth = "100%";
 }
 headerImage();
 
-
+/* Remove line between image and header text.
+*/
 function navTitle() {
     var navTitle = document.getElementById("navTitle");
     navTitle.style.fontSize = "xx-large";
@@ -33,10 +46,11 @@ function navTitle() {
 }
 navTitle();
 
-
+/* Remove line between image and header text.
+*/
 function navTxt() {
     var navTxt = document.getElementById("navTxt");
-    navTxt.style.color = "rgb(6, 158, 6)"; //green
+    navTxt.style.color = "rgb(6, 158, 6)"; // green
     navTxt.style.textDecoration = "none";
 }
 navTxt();
@@ -45,11 +59,15 @@ navTxt();
 function navLink() {
     var navLink = document.querySelectorAll(".navLink");
     navLink.forEach(function(navLink) {
-    navLink.style.color = "rgb(6, 158, 6)"; //green
+    navLink.style.color = "rgb(6, 158, 6)"; // green
     navLink.style.fontSize = "x-large";
     navLink.style.marginRight = "40px";
     navLink.style.paddingLeft = "160px";
     navLink.style.textDecoration = "none";
+    navLink.style.top = "0";
+    navLink.style.left = "0";
+    navLink.style.right = "0";
+    navLink.style.maxWidth = "100%";
     });
 }
 navLink();
@@ -91,7 +109,7 @@ function subMit() {
     subMit.style.backgroundColor = "rgb(6, 158, 6)"; // green 
     subMit.style.border = "1px solid rgb(6, 158, 6)"; // green
     subMit.style.borderRadius = "5px";
-    subMit.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
+    subMit.style.color = "rgba(245, 227, 227, 0.903)"; // light-pink
     subMit.style.cursor = "pointer";
 }
 subMit();
@@ -119,6 +137,10 @@ function gridContainer() {
     gridContainer.forEach(function(gridContainer) {
     gridContainer.style.display = "grid";
     gridContainer.style.gridTemplateColumns = "350px auto";
+    gridContainer.style.top = "0";
+    gridContainer.style.left = "0";
+    gridContainer.style.right = "0";
+    gridContainer.style.maxWidth = "100%";
     });
 }
 gridContainer();
@@ -127,10 +149,14 @@ gridContainer();
 function picTure() {
     var picTure = document.querySelectorAll(".picTure");
     picTure.forEach(function(picTure) {
-    picTure.style.paddingLeft = "260px";
-    picTure.style.paddingRight = "25px";
+    picTure.style.paddingLeft = "200px";
+    picTure.style.paddingRight = "10px";
     picTure.style.paddingTop = "80px";
     picTure.style.width = "40px";
+    picTure.style.top = "0";
+    picTure.style.left = "0";
+    picTure.style.right = "0";
+    picTure.style.maxWidth = "100%";
     });
 }
 picTure();
@@ -142,6 +168,10 @@ styleText.forEach(function(styleText) {
     styleText.style.fontSize = "20px";
     styleText.style.marginTop = "80px";
     styleText.style.marginBottom = "0px";
+    styleText.style.top = "0";
+    styleText.style.left = "0";
+    styleText.style.right = "0";
+    styleText.style.maxWidth = "100%"; 
 });
 
 var restyleText = document.querySelectorAll("#text p");
@@ -149,6 +179,10 @@ restyleText.forEach(function(restyleText) {
     restyleText.style.fontSize = "18px";
     restyleText.style.marginTop = "1px";
     restyleText.style.paddingTop = "0px";
+    restyleText.style.top = "0";
+    restyleText.style.left = "0";
+    restyleText.style.right = "0";
+    restyleText.style.maxWidth = "100%"; 
 });
 
 
@@ -159,6 +193,10 @@ function viDeo() {
     viDeo.style.marginTop = "150px";
     viDeo.style.marginLeft = "180px";
     viDeo.style.width = "70%";
+    viDeo.style.top = "0";
+    viDeo.style.left = "0";
+    viDeo.style.right = "0";
+    viDeo.style.maxWidth = "100%";
 }
 viDeo();
 
@@ -167,12 +205,16 @@ function applyFlexContainer() {
     var flexContainers = document.querySelectorAll(".flexContainer");
     flexContainers.forEach(function(container) {
     container.style.color = "rgba(23, 19, 19, 0.627)"; // black
-    container.style.backgroundColor = "rgba(245, 227, 227, 0.903)"; // light-gray
+    container.style.backgroundColor = "rgba(245, 227, 227, 0.903)"; // light-pink
     container.style.display = "flex";
     container.style.flexWrap = "nowrap";
     container.style.paddingTop = "150px";
     container.style.paddingBottom = "150px";
     container.style.paddingLeft = "60px";
+    container.style.top = "0";
+    container.style.left = "0";
+    container.style.right = "0";
+    container.style.maxWidth = "100%"; 
     });
 }
 applyFlexContainer();
@@ -181,12 +223,20 @@ applyFlexContainer();
 var styleFlexH2 = document.querySelectorAll(".flexContainer h2");
 styleFlexH2.forEach(function(styleFlexH2) {
     styleFlexH2.style.paddingLeft = "10px";
+    styleFlexH2.style.top = "0";
+    styleFlexH2.style.left = "0";
+    styleFlexH2.style.right = "0";
+    styleFlexH2.style.maxWidth = "100%";  
 });
 
 var restyleFlexP = document.querySelectorAll(".flexContainer p");
 restyleFlexP.forEach(function(restyleFlexP) {
     restyleFlexP.style.fontSize = "15px";
     restyleFlexP.style.paddingLeft = "10px";
+    restyleFlexP.style.top = "0";
+    restyleFlexP.style.left = "0";
+    restyleFlexP.style.right = "0";
+    restyleFlexP.style.maxWidth = "100%";  
 });
 
 
@@ -204,6 +254,10 @@ function priCing() {
     priCing.style.paddingLeft = "25px";
     priCing.style.paddingRight = "10px";
     priCing.style.width = "20%";
+    priCing.style.top = "0";
+    priCing.style.left = "0";
+    priCing.style.right = "0";
+    priCing.style.maxWidth = "100%"; 
     });
 }
 priCing();
@@ -215,7 +269,7 @@ button.forEach(function(button) {
     button.style.backgroundColor = "rgb(6, 158, 6)"; // green
     button.style.border = "1px solid rgb(6, 158, 6)"; // green
     button.style.borderRadius = "5px";
-    button.style.color = "rgba(245, 227, 227, 0.903)"; // light-gray
+    button.style.color = "rgba(245, 227, 227, 0.903)"; // light-pink
     button.style.cursor = "pointer";
     button.style.fontSize = "20px";
     button.style.height = "35px";
@@ -233,6 +287,10 @@ styleFooters.forEach(function(footer) {
     footer.style.marginBottom = "30px";
     footer.style.textAlign = "center";
     footer.style.textDecoration = "none";
+    footer.style.top = "0";
+    footer.style.left = "0";
+    footer.style.right = "0";
+    footer.style.maxWidth = "100%"; 
 });
 
 var restyleFooterP = document.querySelectorAll(".fooTer p");
@@ -247,23 +305,16 @@ reStyleFooterA.forEach(function(footera) {
 
 
 
-/* navLink 드랍다운에 클릭할때마다 회색그림자 없애기
-*/
-
-
-/* 모든 버튼에 설정하기
-        navLink.style.top = "0px";
-        navLink.style.left = "0px";
-        navLink.style.right = "0px";
-        navLink.style.width = "100%";
-*/
-
 /* media query for mobile*/
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
     if (mediaQuery <= 440) {
         var heaDer = document.getElementById("heaDer");
         heaDer.style.display = "flex";
+        heaDer.style.top = "0";
+        heaDer.style.left = "0";
+        heaDer.style.right = "0";
+        heaDer.style.width = "100%";
         heaDer.style.maxWidth = "100%";
         heaDer.style.height = "auto";
 
@@ -271,8 +322,12 @@ function checkMediaQuery() {
         headerImage.style.width = "7vw";
         headerImage.style.height = "7vw";
         headerImage.style.marginTop = "17px";
-        headerImage.style.paddingLeft = "8px";
         headerImage.style.marginBottom = "-50px";
+        headerImage.style.paddingLeft = "25px";
+        headerImage.style.top = "0";
+        headerImage.style.left = "0";
+        headerImage.style.right = "0";
+        headerImage.style.maxWidth = "100%"; 
 
         var headerLink = document.getElementById("headerLink");
         headerLink.style.marginTop = "-30px";
@@ -287,35 +342,52 @@ function checkMediaQuery() {
         clickBtn.style.backgroundColor = "rgb(6, 158, 6)";  // green
         clickBtn.style.display = "block";
         clickBtn.style.fontSize = "20vw";
-        clickBtn.style.width = "0px";
-        clickBtn.style.height = "0px";
+        clickBtn.style.textDecoration = "none";
+        clickBtn.style.width = "0";
+        clickBtn.style.height = "0";
         clickBtn.style.marginTop = "-10px";
         clickBtn.style.marginRight = "2px";
         clickBtn.style.padding = "0 60px 80px 20px";
-        clickBtn.style.textDecoration = "none";
+        clickBtn.style.top = "0";
+        clickBtn.style.left = "0";
+        clickBtn.style.right = "0";
+        clickBtn.style.maxWidth = "100%";
 
         document.getElementById("myList").addEventListener("click", function() {
             this.style.display = "none";
         });
         
         var myList = document.getElementById("myList");
-        myList.style.background = "rgba(245, 227, 227, 0.903)"; // light-gray
+        myList.style.background = "rgba(245, 227, 227, 0.903)"; // light-pink 
         myList.style.display = "none";
         myList.style.position = "absolute";
-        myList.style.top = "68px";
+        myList.style.marginTop = "72px";
         myList.style.paddingBottom = "100%";
         myList.style.marginBottom = "100%";
+        myList.style.top = "0";
+        myList.style.left = "0";
+        myList.style.right = "0";
+        myList.style.maxWidth = "100%";
+        myList.style.width = "100%";
         
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
         navTitle.style.paddingTop = "40px";
         navTitle.style.paddingBottom = "10px";
-        navTitle.style.marginLeft = "-25px";
-
+        navTitle.style.marginLeft = "-41px";
+        navTitle.style.top = "0";
+        navTitle.style.left = "0";
+        navTitle.style.right = "0";
+        navTitle.style.maxWidth = "100%";
+        
         var navTxt = document.getElementById("navTxt");
         navTxt.style.fontSize = "5vw";
-        navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black      
-/* */
+        navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black 
+        navTxt.style.top = "0";
+        navTxt.style.left = "0";
+        navTxt.style.right = "0";
+        navTxt.style.maxWidth = "100%";     
+
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(255, 255, 255, 0.965)"; // white
@@ -323,8 +395,13 @@ function checkMediaQuery() {
         navLink.style.paddingTop = "20px";
         navLink.style.paddingBottom = "20px";
         navLink.style.display = "grid";
+        navLink.style.top = "0";
+        navLink.style.left = "0";
+        navLink.style.right = "0";
+        navLink.style.maxWidth = "100%";  
 
-/* */
+/* navLink 드랍다운에 클릭할때마다 회색그림자 없애기
+*/
         navLink.addEventListener("mouseover", function() {
             navLink.style.color = "rgba(23, 19, 19, 0.627)"; // black
             navLink.style.backgroundColor = "none";
@@ -338,13 +415,21 @@ function checkMediaQuery() {
 
         var eMail = document.getElementById("eMail");
         eMail.style.width = "240px";
+        eMail.style.top = "0";
+        eMail.style.left = "0";
+        eMail.style.right = "0";
+        eMail.style.maxWidth = "100%";
 
         var suBs = document.querySelectorAll(".suBs");
         suBs.forEach(function(suBs) {
         suBs.style.marginTop = "150px";
-        suBs.style.marginLeft = "0px";
+        suBs.style.marginLeft = "0";
         suBs.style.marginBottom = "180px";
         suBs.style.marginBottom = "350px";
+        suBs.style.top = "0";
+        suBs.style.left = "0";
+        suBs.style.right = "0";
+        suBs.style.maxWidth = "100%";
         });
        
         var gridContainer = document.querySelectorAll(".gridContainer");
@@ -352,10 +437,11 @@ function checkMediaQuery() {
         gridContainer.style.display = "grid";
         gridContainer.style.gridTemplateColumns = "90px auto";
         gridContainer.style.marginTop = "-230px";
-        gridContainer.style.top = "0px";
-        gridContainer.style.left = "0px";
-        gridContainer.style.right = "0px";
+        gridContainer.style.top = "0";
+        gridContainer.style.left = "0";
+        gridContainer.style.right = "0";
         gridContainer.style.width = "100%";
+        gridContainer.style.maxWidth = "100%";
         });
 
         var picTure = document.querySelectorAll(".picTure");
@@ -363,7 +449,11 @@ function checkMediaQuery() {
         picTure.style.paddingLeft = "20px";
         picTure.style.paddingRight = "25px";
         picTure.style.paddingTop = "80px";
-        picTure.style.width = "40px";   
+        picTure.style.width = "40px"; 
+        picTure.style.top = "0";
+        picTure.style.left = "0";
+        picTure.style.right = "0";
+        picTure.style.maxWidth = "100%";  
         });
 
         var viDeo = document.getElementById("viDeo");
@@ -389,20 +479,24 @@ function checkMediaQuery() {
         priCing.style.marginLeft = "-1px";
         priCing.style.paddingTop = "10px";
         priCing.style.paddingRight = "120px";
-        priCing.style.top = "0px";
-        priCing.style.left = "0px";
-        priCing.style.right = "0px";
-        priCing.style.maxWidth = "100%"; 
         });
 
         var styleFlexs = document.querySelectorAll(".flexContainer h2, .flexContainer p");
         styleFlexs.forEach(function(styleFlex) {
         styleFlex.style.fontSize = "5.2vw";
+        styleFlex.style.top = "0px";
+        styleFlex.style.left = "0px";
+        styleFlex.style.right = "0px";
+        styleFlex.style.maxWidth = "100%"; 
         });  
         
         var styleFooters = document.querySelectorAll(".fooTer p, .fooTer a");
         styleFooters.forEach(function(footer) {
         footer.style.fontSize = "4.8vw";
+        footer.style.top = "0px";
+        footer.style.left = "0px";
+        footer.style.right = "0px";
+        footer.style.maxWidth = "100%";
         });
     }
 }
