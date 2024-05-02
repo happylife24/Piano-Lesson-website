@@ -4,8 +4,7 @@ function styleBackground() {
 }
 styleBackground();
 
-/* Remove line between image and header text.
-*/
+
 function heaDer() {
     var heaDer = document.getElementById("heaDer");
     heaDer.style.background = "rgba(245, 227, 227, 0.903)";  // light-pink
@@ -22,11 +21,9 @@ function heaDer() {
 }
 heaDer();
 
-/* Remove line between image and header text.
-*/
+
 function headerImage() {
     var headerImage = document.getElementById("headerImage");
-    headerImage.style.textDecoration = "none";
     headerImage.style.marginTop = "10px";
     headerImage.style.marginLeft = "20px";
     headerImage.style.width = "40px";
@@ -37,8 +34,7 @@ function headerImage() {
 }
 headerImage();
 
-/* Remove line between image and header text.
-*/
+
 function navTitle() {
     var navTitle = document.getElementById("navTitle");
     navTitle.style.fontSize = "xx-large";
@@ -46,12 +42,13 @@ function navTitle() {
 }
 navTitle();
 
-/* Remove line between image and header text.
-*/
+
 function navTxt() {
     var navTxt = document.getElementById("navTxt");
     navTxt.style.color = "rgb(6, 158, 6)"; // green
     navTxt.style.textDecoration = "none";
+    navTxt.style.fontSize = "xx-large";
+    navTxt.style.fontWeight = "700";
 }
 navTxt();
 
@@ -330,9 +327,6 @@ function checkMediaQuery() {
         headerImage.style.right = "0";
         headerImage.style.maxWidth = "100%"; 
 
-        var headerLink = document.getElementById("headerLink");
-        headerLink.style.marginTop = "-30px";
-
         var fontSize = document.querySelectorAll("#navTitle, .navLink, .suBs, input, #text h2, #text p, button");
         fontSize.forEach(function(fontSize){
             fontSize.style.fontSize = "5.5vw";
@@ -383,6 +377,7 @@ function checkMediaQuery() {
         
         var navTxt = document.getElementById("navTxt");
         navTxt.style.fontSize = "5vw";
+        navTxt.style.textDecoration = "none";
         navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black 
         navTxt.style.top = "0";
         navTxt.style.left = "0";
@@ -391,7 +386,7 @@ function checkMediaQuery() {
 
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
-        navLink.style.color = "rgba(255, 255, 255, 0.965)"; // white
+        navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
         navLink.style.fontSize = "7vw";
         navLink.style.paddingTop = "20px";
         navLink.style.paddingBottom = "20px";
@@ -401,18 +396,20 @@ function checkMediaQuery() {
         navLink.style.right = "0";
         navLink.style.maxWidth = "100%";  
 
-/* navLink 드랍다운에 클릭할때마다 회색그림자 없애기
+/* make "mouseover" color  to remain for few seconds
 */
         navLink.addEventListener("mouseover", function() {
-            navLink.style.color = "rgba(23, 19, 19, 0.627)"; // black
-            navLink.style.backgroundColor = "none";
+            navLink.style.color = "rgb(6, 158, 6)";  // green
+            navLink.style.backgroundColor = "rgba(245, 227, 227, 0.903)";  // light pink
+
         });
 
         navLink.addEventListener("mouseout", function() {
-            navLink.style.color = rgb(6, 158, 6); // green
-            navLink.style.backgroundColor = "none";
+            navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
+            navLink.style.backgroundColor = "rgba(245, 227, 227, 0.903)";  // light pink
+
         });
-    });
+        });
 
         var eMail = document.getElementById("eMail");
         eMail.style.width = "240px";
