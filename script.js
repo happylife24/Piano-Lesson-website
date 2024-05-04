@@ -306,7 +306,7 @@ reStyleFooterA.forEach(function(footera) {
 /* media query for mobile*/
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
-    if (mediaQuery <= 440) {
+    if (mediaQuery <= 400) { 
         var heaDer = document.getElementById("heaDer");
         heaDer.style.display = "flex";
         heaDer.style.top = "0";
@@ -497,6 +497,200 @@ function checkMediaQuery() {
         footer.style.right = "0px";
         footer.style.maxWidth = "100%";
         });
+    } 
+    
+    else if (mediaQuery > 400 && mediaQuery < 600) {
+        var heaDer = document.getElementById("heaDer");
+        heaDer.style.display = "flex";
+        heaDer.style.top = "0";
+        heaDer.style.left = "0";
+        heaDer.style.right = "0";
+        heaDer.style.width = "100%";
+        heaDer.style.maxWidth = "100%";
+        heaDer.style.height = "auto";
+
+        var headerImage = document.getElementById("headerImage");
+        headerImage.style.width = "5vw";
+        headerImage.style.height = "5vw";
+        headerImage.style.marginTop = "15px";
+        headerImage.style.marginBottom = "-50px";
+        headerImage.style.paddingLeft = "30px";
+        headerImage.style.top = "0";
+        headerImage.style.left = "0";
+        headerImage.style.right = "0";
+        headerImage.style.maxWidth = "100%"; 
+
+        var fontSize = document.querySelectorAll("#navTitle, .navLink, .suBs, input, #text h2, #text p, button");
+        fontSize.forEach(function(fontSize){
+            fontSize.style.fontSize = "3.5vw";
+        });
+
+        var clickBtn = document.getElementById("clickBtn");
+        clickBtn.style.color = "rgba(255, 255, 255, 0.965)";  // white
+        clickBtn.style.backgroundColor = "rgb(6, 158, 6)";  // green
+        clickBtn.style.display = "block";
+        clickBtn.style.fontSize = "10vw";
+        clickBtn.style.textDecoration = "none";
+        clickBtn.style.width = "0";
+        clickBtn.style.height = "0";
+        clickBtn.style.marginTop = "1px";
+        clickBtn.style.marginRight = "2px";
+        clickBtn.style.padding = "13px 50px 70px 30px";
+        clickBtn.style.top = "0";
+        clickBtn.style.left = "0";
+        clickBtn.style.right = "0";
+        clickBtn.style.maxWidth = "100%";
+
+        document.getElementById("myList").addEventListener("click", function() {
+            this.style.display = "none";
+        });
+        
+        var myList = document.getElementById("myList");
+        myList.style.background = "rgba(245, 227, 227, 0.903)"; // light-pink 
+        myList.style.display = "none";
+        myList.style.position = "absolute";
+        myList.style.marginTop = "82px";
+        myList.style.paddingBottom = "100%";
+        myList.style.marginBottom = "100%";
+        myList.style.top = "0";
+        myList.style.left = "0";
+        myList.style.right = "0";
+        myList.style.maxWidth = "100%";
+        myList.style.width = "100%";
+        
+        var navTitle = document.getElementById("navTitle");
+        navTitle.style.flexGrow = "1";
+        navTitle.style.paddingTop = "40px";
+        navTitle.style.paddingBottom = "10px";
+        navTitle.style.marginLeft = "-63px";
+        navTitle.style.top = "0";
+        navTitle.style.left = "0";
+        navTitle.style.right = "0";
+        navTitle.style.maxWidth = "100%";
+        
+        var navTxt = document.getElementById("navTxt");
+        navTxt.style.fontSize = "3vw";
+        navTxt.style.textDecoration = "none";
+        navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black 
+        navTxt.style.top = "0";
+        navTxt.style.left = "0";
+        navTxt.style.right = "0";
+        navTxt.style.maxWidth = "100%";     
+
+        var navLink = document.querySelectorAll(".navLink");
+        navLink.forEach(function(navLink) {
+        navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
+        navLink.style.fontSize = "4vw";
+        navLink.style.paddingTop = "50px";
+        navLink.style.paddingBottom = "20px";
+        navLink.style.display = "grid";
+        navLink.style.top = "0";
+        navLink.style.left = "0";
+        navLink.style.right = "0";
+        navLink.style.maxWidth = "100%";  
+
+        navLink.addEventListener("mouseover", function() {
+            navLink.style.color = "rgb(6, 158, 6)";  // green
+            navLink.style.backgroundColor = "rgba(245, 227, 227, 0.903)";  // light pink
+
+        setTimeout (function() {
+            navLink.style.color = "";
+            navLink.style.backgroundColor = "";
+        },9000); // 9 seconds
+        });
+
+        navLink.addEventListener("mouseout", function() {
+            navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
+            navLink.style.backgroundColor = "rgba(245, 227, 227, 0.903)";  // light pink
+        });
+        });
+        
+        var eMail = document.getElementById("eMail");
+        eMail.style.width = "240px";
+        eMail.style.top = "0";
+        eMail.style.left = "0";
+        eMail.style.right = "0";
+        eMail.style.maxWidth = "100%";
+
+        var suBs = document.querySelectorAll(".suBs");
+        suBs.forEach(function(suBs) {
+        suBs.style.marginTop = "150px";
+        suBs.style.marginLeft = "0";
+        suBs.style.marginBottom = "180px";
+        suBs.style.marginBottom = "350px";
+        suBs.style.top = "0";
+        suBs.style.left = "0";
+        suBs.style.right = "0";
+        suBs.style.maxWidth = "100%";
+        });
+       
+        var gridContainer = document.querySelectorAll(".gridContainer");
+        gridContainer.forEach(function(gridContainer) {
+        gridContainer.style.display = "grid";
+        gridContainer.style.gridTemplateColumns = "90px auto";
+        gridContainer.style.marginTop = "-230px";
+        gridContainer.style.top = "0";
+        gridContainer.style.left = "0";
+        gridContainer.style.right = "0";
+        gridContainer.style.width = "100%";
+        gridContainer.style.maxWidth = "100%";
+        });
+
+        var picTure = document.querySelectorAll(".picTure");
+        picTure.forEach(function(picTure) {
+        picTure.style.paddingLeft = "20px";
+        picTure.style.paddingRight = "25px";
+        picTure.style.paddingTop = "80px";
+        picTure.style.width = "40px"; 
+        picTure.style.top = "0";
+        picTure.style.left = "0";
+        picTure.style.right = "0";
+        picTure.style.maxWidth = "100%";  
+        });
+
+        var viDeo = document.getElementById("viDeo");
+        viDeo.style.border = "none";
+        viDeo.style.height = "auto";
+        viDeo.style.marginTop = "150px";
+        viDeo.style.marginBottom = "80px";
+        viDeo.style.marginLeft = "50px";
+        viDeo.style.width = "70%"; 
+
+        var flexContainers = document.querySelectorAll(".flexContainer");
+        flexContainers.forEach(function(container) {
+        container.style.display = "grid";
+        container.style.gridTemplateRows = "1fr 1fr 1fr";
+        container.style.gap = "50px";
+        container.style.paddingTop = "170px";
+        });
+
+        var priCings = document.querySelectorAll("#priCing");
+        priCings.forEach(function(priCing) {
+        priCing.style.borderRadius = "7px";
+        priCing.style.height = "auto"; 
+        priCing.style.marginLeft = "65px";
+        priCing.style.paddingTop = "10px";
+        priCing.style.paddingRight = "120px";
+        });
+
+        var styleFlexs = document.querySelectorAll(".flexContainer h2, .flexContainer p");
+        styleFlexs.forEach(function(styleFlex) {
+        styleFlex.style.fontSize = "3vw";
+        styleFlex.style.top = "0px";
+        styleFlex.style.left = "0px";
+        styleFlex.style.right = "0px";
+        styleFlex.style.maxWidth = "100%"; 
+        });  
+        
+        var styleFooters = document.querySelectorAll(".fooTer p, .fooTer a");
+        styleFooters.forEach(function(footer) {
+        footer.style.fontSize = "2.8vw";
+        footer.style.top = "0px";
+        footer.style.left = "0px";
+        footer.style.right = "0px";
+        footer.style.maxWidth = "100%";
+        });
+
     }
 }
 window.onload = checkMediaQuery;
