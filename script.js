@@ -396,21 +396,22 @@ function checkMediaQuery() {
         navLink.style.right = "0";
         navLink.style.maxWidth = "100%";  
 
-/* make "mouseover" color  to remain for few seconds
-*/
         navLink.addEventListener("mouseover", function() {
             navLink.style.color = "rgb(6, 158, 6)";  // green
             navLink.style.backgroundColor = "rgba(245, 227, 227, 0.903)";  // light pink
 
+        setTimeout (function() {
+            navLink.style.color = "";
+            navLink.style.backgroundColor = "";
+        },9000); // 9 seconds
         });
 
         navLink.addEventListener("mouseout", function() {
             navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
             navLink.style.backgroundColor = "rgba(245, 227, 227, 0.903)";  // light pink
-
         });
         });
-
+        
         var eMail = document.getElementById("eMail");
         eMail.style.width = "240px";
         eMail.style.top = "0";
