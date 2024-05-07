@@ -498,7 +498,7 @@ function checkMediaQuery() {
         footer.style.maxWidth = "100%";
         });
     } 
-    
+/* finished between green stars */   
     else if (mediaQuery > 400 && mediaQuery < 600) {
         var heaDer = document.getElementById("heaDer");
         heaDer.style.display = "flex";
@@ -512,13 +512,8 @@ function checkMediaQuery() {
         var headerImage = document.getElementById("headerImage");
         headerImage.style.width = "5vw";
         headerImage.style.height = "5vw";
-        headerImage.style.marginTop = "15px";
-        headerImage.style.marginBottom = "-50px";
-        headerImage.style.paddingLeft = "30px";
-        headerImage.style.top = "0";
-        headerImage.style.left = "0";
-        headerImage.style.right = "0";
-        headerImage.style.maxWidth = "100%"; 
+        headerImage.style.padding = "15px 5px 0 0";
+        headerImage.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink;
 
         var fontSize = document.querySelectorAll("#navTitle, .navLink, .suBs, input, #text h2, #text p, button");
         fontSize.forEach(function(fontSize){
@@ -531,16 +526,10 @@ function checkMediaQuery() {
         clickBtn.style.display = "block";
         clickBtn.style.fontSize = "10vw";
         clickBtn.style.textDecoration = "none";
-        clickBtn.style.width = "0";
-        clickBtn.style.height = "0";
-        clickBtn.style.marginTop = "1px";
-        clickBtn.style.marginRight = "2px";
-        clickBtn.style.padding = "13px 50px 70px 30px";
-        clickBtn.style.top = "0";
-        clickBtn.style.left = "0";
-        clickBtn.style.right = "0";
-        clickBtn.style.maxWidth = "100%";
-
+        clickBtn.style.border = "1px solid rgb(6, 158, 6)";  // green
+        clickBtn.style.padding = "5px 20px";
+        clickBtn.style.float = "left";
+        
         document.getElementById("myList").addEventListener("click", function() {
             this.style.display = "none";
         });
@@ -549,7 +538,7 @@ function checkMediaQuery() {
         myList.style.background = "rgba(245, 227, 227, 0.903)"; // light-pink 
         myList.style.display = "none";
         myList.style.position = "absolute";
-        myList.style.marginTop = "82px";
+        myList.style.marginTop = "80px";
         myList.style.paddingBottom = "100%";
         myList.style.marginBottom = "100%";
         myList.style.top = "0";
@@ -557,31 +546,25 @@ function checkMediaQuery() {
         myList.style.right = "0";
         myList.style.maxWidth = "100%";
         myList.style.width = "100%";
-        
+
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
-        navTitle.style.paddingTop = "40px";
-        navTitle.style.paddingBottom = "10px";
-        navTitle.style.marginLeft = "-63px";
-        navTitle.style.top = "0";
-        navTitle.style.left = "0";
-        navTitle.style.right = "0";
-        navTitle.style.maxWidth = "100%";
-        
+        navTitle.style.padding = "30px 0";
+ 
         var navTxt = document.getElementById("navTxt");
         navTxt.style.fontSize = "3vw";
         navTxt.style.textDecoration = "none";
         navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black 
-        navTxt.style.top = "0";
-        navTxt.style.left = "0";
-        navTxt.style.right = "0";
-        navTxt.style.maxWidth = "100%";     
+        navTxt.style.marginTop = "80px";
+        navTxt.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink     
+/* */
 
+/* need to fix this part */
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
         navLink.style.fontSize = "4vw";
-        navLink.style.paddingTop = "50px";
+        navLink.style.paddingTop = "20px";
         navLink.style.paddingBottom = "20px";
         navLink.style.display = "grid";
         navLink.style.top = "0";
