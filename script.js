@@ -336,18 +336,19 @@ function checkMediaQuery() {
         clickBtn.style.fontSize = "20vw";
         clickBtn.style.textDecoration = "none";
         clickBtn.style.border = "1px solid rgb(6, 158, 6)";  // green
-        clickBtn.style.padding = "5px 20px";
+        clickBtn.style.padding = "1px 20px";
         clickBtn.style.float = "left";
         
         document.getElementById("myList").addEventListener("click", function() {
             this.style.display = "none";
         });
-        
+
+/* */
         var myList = document.getElementById("myList");
         myList.style.background = "rgba(245, 227, 227, 0.903)"; // light-pink 
         myList.style.display = "none";
         myList.style.position = "absolute";
-        myList.style.marginTop = "72px";
+        myList.style.marginTop = "80px";
         myList.style.paddingBottom = "100%";
         myList.style.marginBottom = "100%";
         myList.style.top = "0";
