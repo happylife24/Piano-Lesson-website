@@ -302,8 +302,10 @@ reStyleFooterA.forEach(function(footera) {
 
 
 
+/* fix navlink & mylist - media query -  over 600 */
 
-/* media query for mobile*/
+/*       media query for mobile       */
+
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
     if (mediaQuery <= 400) { 
@@ -316,7 +318,7 @@ function checkMediaQuery() {
         heaDer.style.maxWidth = "100%";
         heaDer.style.height = "auto";
 
-/* edited */
+/* */
         var headerImage = document.getElementById("headerImage");
         headerImage.style.width = "7vw";
         headerImage.style.height = "7vw";
@@ -369,7 +371,7 @@ function checkMediaQuery() {
         navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black 
         navTxt.style.marginTop = "80px";
         navTxt.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink      
-
+        
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
@@ -484,7 +486,7 @@ function checkMediaQuery() {
         footer.style.maxWidth = "100%";
         });
     } 
-/* finished between green stars */   
+  
     else if (mediaQuery > 400 && mediaQuery < 600) {
         var heaDer = document.getElementById("heaDer");
         heaDer.style.display = "flex";
@@ -543,9 +545,7 @@ function checkMediaQuery() {
         navTxt.style.color = "rgba(23, 19, 19, 0.627)";  // black 
         navTxt.style.marginTop = "80px";
         navTxt.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink     
-/* */
 
-/* need to fix this part */
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.color = "rgba(23, 19, 19, 0.627)";  // black
