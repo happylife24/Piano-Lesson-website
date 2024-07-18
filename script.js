@@ -68,6 +68,7 @@ function navLink() {
     });
 }
 navLink();
+
  
 /* */
 function closeBtn() {
@@ -76,6 +77,7 @@ function closeBtn() {
 }
 closeBtn();
 /* */
+
 
 function styleInput() {
     var input = document.querySelectorAll("input");
@@ -117,19 +119,6 @@ function subMit() {
     subMit.style.cursor = "pointer";
 }
 subMit();
-
-
-/* */
-function openButton() {
-    document.getElementById("myList").style.height = "100%";
-}
-openButton();
-
-function closeButton() {
-    document.getElementById("myList").style.height = "0%";
-}
-closeButton();
-/* */
 
 
 function gridContainer() {
@@ -305,7 +294,7 @@ reStyleFooterA.forEach(function(footera) {
 
 
 
-/* fix open&click button */
+/* fix button to see on mediaquery */
 
 /*       media query for mobile       */
 
@@ -321,7 +310,7 @@ function checkMediaQuery() {
         heaDer.style.height = "auto";
 
 
-        var fontSize = document.querySelectorAll("#navTitle, .navLink, .suBs, input, #text h2, #text p, button");
+        var fontSize = document.querySelectorAll(".navLink, .suBs, input, #text h2, #text p, button");
         fontSize.forEach(function(fontSize){
             fontSize.style.fontSize = "5.5vw";
         });
@@ -338,29 +327,25 @@ function checkMediaQuery() {
         navTitle.style.flexGrow = "1";
         navTitle.style.padding = "30px 0";
     
-
-/* */   
+/* */
         var myList = document.getElementById("myList");
-        myList.style.height = "0%";
-        myList.style.width = "100%";
-        myList.style.position = "fixed";
-        myList.style.zIndex = "1";
-        myList.style.top = "0";
-        myList.style.right = "0"; 
         myList.style.backgroundColor = rgba(0,0,0, 0.9);  
-        myList.style.overflowY = "hidden";
-        myList.style.transition = "0.5s";
+
+
+        var closeBtn = document.getElementById("closeBtn");
+        closeBtn.style.display = "block";
+        closeBtn.style.top = "20px";
+        closeBtn.style.right = "45px";
+        closeBtn.style.fontSize = "90px";
 
 
         var myContent = document.getElementById("myContent");
-        myContent.style.position = "relative";
         myContent.style.top = "25%";
         myContent.style.width = "100%";
         myContent.style.textAlign = "center";
         myContent.style.marginTop = "120px";
     
-
-/* */       
+     
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
         navLink.style.padding = "8px";
@@ -369,25 +354,17 @@ function checkMediaQuery() {
         navLink.style.display = "block";
         navLink.style.transition = "0.3s";
         });
-
-
-        var closeBtn = document.getElementById("closeBtn");
-        closeBtn.style.position = "absolute";
-        closeBtn.style.top = "20px";
-        closeBtn.style.right = "45px";
-        closeBtn.style.fontSize = "90px";
-
+/* */
 
     
 
-
+/* */
         var navTxt = document.getElementById("navTxt");
-        navTxt.style.fontSize = "1vw";
         navTxt.style.textDecoration = "none";
         navTxt.style.color = "rgba(23, 19, 19, 0.627)"; // black 
         navTxt.style.marginTop = "80px";
         navTxt.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink 
-
+/* */
         
         var eMail = document.getElementById("eMail");
         eMail.style.width = "240px";
