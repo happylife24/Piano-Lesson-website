@@ -71,11 +71,11 @@ navLink();
 
  
 /* */
-function closeBtn() {
-    var closeBtn = document.getElementById("closeBtn");
-    closeBtn.style.display = "none";
+function menuBtn() {
+    var menuBtn = document.getElementById("menuBtn");
+    menuBtn.style.display = "block";
 }
-closeBtn();
+menuBtn();
 /* */
 
 
@@ -300,7 +300,7 @@ reStyleFooterA.forEach(function(footera) {
 
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
-    if (mediaQuery <= 400) { 
+    if (mediaQuery <= 460) { 
         var heaDer = document.getElementById("heaDer");
         heaDer.style.top = "0";
         heaDer.style.left = "0";
@@ -332,11 +332,11 @@ function checkMediaQuery() {
         myList.style.backgroundColor = rgba(0,0,0, 0.9);  
 
 
-        var closeBtn = document.getElementById("closeBtn");
-        closeBtn.style.display = "block";
-        closeBtn.style.top = "20px";
-        closeBtn.style.right = "45px";
-        closeBtn.style.fontSize = "90px";
+        var menuBtn = document.getElementById("menuBtn");
+        menuBtn.style.display = "none";   
+        menuBtn.style.marginTop = "90px";
+        menuBtn.style.right = "305px";
+    
 
 
         var myContent = document.getElementById("myContent");
@@ -365,6 +365,7 @@ function checkMediaQuery() {
         navTxt.style.marginTop = "80px";
         navTxt.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink 
 /* */
+
         
         var eMail = document.getElementById("eMail");
         eMail.style.width = "240px";
