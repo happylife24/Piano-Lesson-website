@@ -294,10 +294,11 @@ reStyleFooterA.forEach(function(footera) {
 
 
 
-/*           fix open & close menubutton             */
 
-/*       media query for mobile       */
-
+/*           fix header's background because it is doubled colors. 
+        
+             reduce space between menu icon and menu list                */
+             
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
     if (mediaQuery <= 460) { 
@@ -323,25 +324,36 @@ function checkMediaQuery() {
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
         navTitle.style.padding = "30px 0";
-    
-        var myList = document.getElementById("myList");
-        myList.style.backgroundColor = "rgba(0, 0, 0, 0.9)";  
 
+
+        document.getElementById("menuBtn").addEventListener("click", function() {
+            const content = document.getElementById("myContent");
+            content.style.display = (content.style.display === "block" || content.style.display === "") ? "none" : "block";
+        });
+    /* */
+        var myList = document.getElementById("myList");
+        myList.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+        myList.style.position = "relative";  
+    /* */
         var menuBtn = document.getElementById("menuBtn");
         menuBtn.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink
         menuBtn.style.backgroundColor = "rgba(245, 227, 227, 0.903)"; // light-pink
         menuBtn.style.color = "rgb(6, 158, 6)"; // green
         menuBtn.style.display = "block";   
         menuBtn.style.fontSize = "50px";
+
+        menuBtn.style.position = "absolute";
+
         menuBtn.style.paddingLeft = "250px";
         menuBtn.style.marginTop = "-60px";
-
+    /* */    
         var myContent = document.getElementById("myContent");
+        myContent.style.display = "none";
         myContent.style.top = "25%";
         myContent.style.width = "100%";
         myContent.style.textAlign = "center";
         myContent.style.marginTop = "120px";  /* find out what this part means */
-
+    /* */
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
             navLink.style.padding = "8px";
@@ -352,6 +364,7 @@ function checkMediaQuery() {
             navLink.style.transition = "0.3s";
             navLink.style.textAlign = "right";
         });
+    
 
         var navTxt = document.getElementById("navTxt");
         navTxt.style.textDecoration = "none";
