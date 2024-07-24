@@ -295,9 +295,7 @@ reStyleFooterA.forEach(function(footera) {
 
 
 
-/*           fix header's background because it is doubled colors. 
-        
-             reduce space between menu icon and menu list                */
+/*         reduce space between menu icon and menu list                */
              
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
