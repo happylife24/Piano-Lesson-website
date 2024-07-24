@@ -331,9 +331,8 @@ function checkMediaQuery() {
             content.style.display = (content.style.display === "block" || content.style.display === "") ? "none" : "block";
         });
     /* */
-        var myList = document.getElementById("myList");
-        myList.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
-        myList.style.position = "relative";  
+        var myList = document.getElementById("myList"); 
+        myList.style.position = "relative";
     /* */
         var menuBtn = document.getElementById("menuBtn");
         menuBtn.style.border = "1px solid rgba(245, 227, 227, 0.903)"; // light-pink
@@ -341,11 +340,9 @@ function checkMediaQuery() {
         menuBtn.style.color = "rgb(6, 158, 6)"; // green
         menuBtn.style.display = "block";   
         menuBtn.style.fontSize = "50px";
-
         menuBtn.style.position = "absolute";
-
-        menuBtn.style.paddingLeft = "250px";
-        menuBtn.style.marginTop = "-60px";
+        menuBtn.style.left = "10px";
+        menuBtn.style.marginTop = "-65px";
     /* */    
         var myContent = document.getElementById("myContent");
         myContent.style.display = "none";
@@ -369,7 +366,6 @@ function checkMediaQuery() {
         var navTxt = document.getElementById("navTxt");
         navTxt.style.textDecoration = "none";
         navTxt.style.color = "rgba(23, 19, 19, 0.627)"; 
-        navTxt.style.marginTop = "80px";
         navTxt.style.border = "1px solid rgba(245, 227, 227, 0.903)"; 
         navTxt.style.fontSize = "7vw";
 
