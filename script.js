@@ -295,8 +295,7 @@ reStyleFooterA.forEach(function(footera) {
 
 
 
-/*         reduce space between menu icon and menu list                */
-             
+
 function checkMediaQuery() {
     var mediaQuery = window.innerWidth;
     if (mediaQuery <= 460) { 
@@ -308,22 +307,26 @@ function checkMediaQuery() {
         heaDer.style.maxWidth = "100%";
         heaDer.style.height = "auto";
 
+
         var fontSize = document.querySelectorAll(".navLink, .suBs, input, #text h2, #text p, button");
         fontSize.forEach(function(fontSize){
             fontSize.style.fontSize = "5.5vw";
         });
 
+
         var headerImage = document.getElementById("headerImage");
         headerImage.style.width = "7vw";
         headerImage.style.height = "7vw";
         headerImage.style.padding = "15px 5px 0 0";
-        headerImage.style.border = "1px solid rgba(245, 227, 227, 0.903)"; 
+        headerImage.style.border = "1px solid rgba(245, 227, 227, 0.903)";
+
 
         var navTitle = document.getElementById("navTitle");
         navTitle.style.flexGrow = "1";
         navTitle.style.padding = "30px 0";
 
 
+    /* */
         document.getElementById("menuBtn").addEventListener("click", function() {
             const content = document.getElementById("myContent");
             content.style.display = (content.style.display === "block" || content.style.display === "") ? "none" : "block";
@@ -344,19 +347,19 @@ function checkMediaQuery() {
     /* */    
         var myContent = document.getElementById("myContent");
         myContent.style.display = "none";
-        myContent.style.top = "25%";
         myContent.style.width = "100%";
         myContent.style.textAlign = "center";
-        myContent.style.marginTop = "120px";  /* find out what this part means */
+        myContent.style.marginTop = "60px"; 
+        myContent.style.marginBottom = "150px";  
     /* */
         var navLink = document.querySelectorAll(".navLink");
         navLink.forEach(function(navLink) {
-            navLink.style.padding = "8px";
-            navLink.style.fontSize = "7vw";
+            navLink.style.padding = "20px";
+            navLink.style.fontSize = "9vw";
             navLink.style.color = "rgba(23, 19, 19, 0.627)";  
             navLink.style.display = "block";
             navLink.style.paddingTop = "40px";
-            navLink.style.transition = "0.3s";
+            navLink.style.transition = "0.3s"; /*         find what it is              */
             navLink.style.textAlign = "right";
         });
     
@@ -367,16 +370,10 @@ function checkMediaQuery() {
         navTxt.style.border = "1px solid rgba(245, 227, 227, 0.903)"; 
         navTxt.style.fontSize = "7vw";
 
-        var eMail = document.getElementById("eMail");
-        eMail.style.width = "240px";
-        eMail.style.top = "0";
-        eMail.style.left = "0";
-        eMail.style.right = "0";
-        eMail.style.maxWidth = "100%";
 
         var suBs = document.querySelectorAll(".suBs");
         suBs.forEach(function(suBs) {
-            suBs.style.marginTop = "150px";
+            suBs.style.marginTop = "70px";
             suBs.style.marginLeft = "0";
             suBs.style.marginBottom = "350px";
             suBs.style.top = "0";
@@ -384,7 +381,16 @@ function checkMediaQuery() {
             suBs.style.right = "0";
             suBs.style.maxWidth = "100%";
         });
-       
+
+
+        var eMail = document.getElementById("eMail");
+            eMail.style.width = "240px";
+            eMail.style.top = "0";
+            eMail.style.left = "0";
+            eMail.style.right = "0";
+            eMail.style.maxWidth = "100%";
+
+
         var gridContainer = document.querySelectorAll(".gridContainer");
         gridContainer.forEach(function(gridContainer) {
             gridContainer.style.display = "grid";
@@ -396,6 +402,7 @@ function checkMediaQuery() {
             gridContainer.style.width = "100%";
             gridContainer.style.maxWidth = "100%";
         });
+
 
         var picTure = document.querySelectorAll(".picTure");
         picTure.forEach(function(picTure) {
@@ -409,6 +416,7 @@ function checkMediaQuery() {
             picTure.style.maxWidth = "100%";  
         });
 
+
         var viDeo = document.getElementById("viDeo");
         viDeo.style.border = "none";
         viDeo.style.height = "auto";
@@ -417,6 +425,7 @@ function checkMediaQuery() {
         viDeo.style.marginLeft = "50px";
         viDeo.style.width = "70%"; 
 
+
         var flexContainers = document.querySelectorAll(".flexContainer");
         flexContainers.forEach(function(container) {
             container.style.display = "grid";
@@ -424,6 +433,7 @@ function checkMediaQuery() {
             container.style.gap = "50px";
             container.style.paddingTop = "170px";
         });
+
 
         var priCings = document.querySelectorAll("#priCing");
         priCings.forEach(function(priCing) {
@@ -434,6 +444,7 @@ function checkMediaQuery() {
             priCing.style.paddingRight = "120px";
         });
 
+
         var styleFlexs = document.querySelectorAll(".flexContainer h2, .flexContainer p");
         styleFlexs.forEach(function(styleFlex) {
             styleFlex.style.fontSize = "5.2vw";
@@ -441,7 +452,8 @@ function checkMediaQuery() {
             styleFlex.style.left = "0px";
             styleFlex.style.right = "0px";
             styleFlex.style.maxWidth = "100%"; 
-        });  
+        });
+
         
         var styleFooters = document.querySelectorAll(".fooTer p, .fooTer a");
         styleFooters.forEach(function(footer) {
@@ -453,6 +465,5 @@ function checkMediaQuery() {
         });
     }
 }
-
 window.onload = checkMediaQuery;
 window.onresize = checkMediaQuery;
